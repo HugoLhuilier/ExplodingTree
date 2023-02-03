@@ -11,7 +11,7 @@ public class Monster : MonoBehaviour
     private int HP;
     private int payload;
     
-    private bool direction;      // true = left ; false = right
+    private int direction;      // 1 = left ; -1 = right
 
     private Vector2 spawnPosition;
 
@@ -40,7 +40,7 @@ public class Monster : MonoBehaviour
         10
     };
 
-    Monster(int ty, bool dir){
+    Monster(int ty, int dir){
         type = ty;
         direction = dir;
         name = names[type];
@@ -60,8 +60,9 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         while(HP>0){
-            transform.position = new Vector3(0,0,0) * Time.deltaTime;
+            transform.position = new Vector3(direction*speed*0.01f,0,0) * Time.deltaTime;
         }
     }
 }
