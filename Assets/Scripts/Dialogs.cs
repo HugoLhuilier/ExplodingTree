@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class Dialogs : MonoBehaviour
 {
 
     [SerializeField] public int[] resources = new int[4];
