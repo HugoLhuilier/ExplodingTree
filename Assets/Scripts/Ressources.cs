@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Ressources : MonoBehaviour
 {
-    private int coins { get; set; }
-    private int greenMat { get; set; }
-    private int blueMat { get; set; }
-    private int redMat { get; set; }
-    private int brownMat { get; set; }
+    private int coins;
+    public int greenMat;
+    public int blueMat;
+    public int redMat;
+    public int brownMat;
 
 
     // Start is called before the first frame update
@@ -23,5 +23,13 @@ public class Ressources : MonoBehaviour
         
     }
 
+    public int getCoins()
+    {
+        return coins;
+    }
 
+    public void addCoins(int qtt)
+    {
+        coins += qtt;
+    }
 }
