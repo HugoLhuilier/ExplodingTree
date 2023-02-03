@@ -29,7 +29,7 @@ public class Machines : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && collide)
         {
-            player.GetComponent<playerMovement>().resources[type] += resources;
+            player.GetComponent<PLayerMovement>().resources[type] += resources;
             resources = 0;
         }
 
