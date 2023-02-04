@@ -20,8 +20,7 @@ public class UIClose : MonoBehaviour
         {
             Vector3 mousePosition = Input.mousePosition;
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            print(worldPosition);
-
+            
             if (Vector2.Distance(worldPosition, motherWeapon.transform.position) > 2) {
 
 

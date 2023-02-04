@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7806354275744537799}
   - component: {fileID: 4113914280735824669}
   - component: {fileID: -5293829955270541944}
+  - component: {fileID: -2517815247490454471}
+  - component: {fileID: 889566764158876815}
   m_Layer: 0
   m_Name: rondrouge
-  m_TagString: Untagged
+  m_TagString: UIObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,3 +101,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motherWeapon: {fileID: 0}
   mainUI: {fileID: 4804461747690691630}
+--- !u!58 &-2517815247490454471
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4804461747690691630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.7850003
+--- !u!114 &889566764158876815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4804461747690691630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c459bda3bc7ca0846afbd10ecaf0cb3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motherWeapon: {fileID: 0}
