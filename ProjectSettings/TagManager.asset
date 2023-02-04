@@ -47,6 +47,9 @@ TagManager:
   - name: Murs
     uniqueID: 2345913311
     locked: 0
+  - name: Murs2vant
+    uniqueID: 1875505589
+    locked: 0
   - name: DecorsMurs
     uniqueID: 943951787
     locked: 0
