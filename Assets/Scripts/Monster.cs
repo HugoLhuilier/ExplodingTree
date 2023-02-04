@@ -10,8 +10,8 @@ public class Monster : MonoBehaviour
     private string monsterName;
     private int type;
     private float speed;
-    private int HP;
-    private int damage;
+    private float HP;
+    private float damage;
     private int payload;
 
     private bool alive;
@@ -137,7 +137,7 @@ public class Monster : MonoBehaviour
         
     }
 
-    public void GetDamage(int damage)
+    public void GetDamage(float damage)
     {
         HP -= damage;
         if (HP <= 0)
