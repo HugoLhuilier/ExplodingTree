@@ -28,7 +28,7 @@ public class uiAchat : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             print("oui2");
-            Instantiate(typedemachine, this.transform.parent.position, this.transform.parent.rotation);
+            Instantiate(typedemachine, this.transform.parent.position + new Vector3(0, 0.5f), this.transform.parent.rotation);
             Destroy(this.transform.parent.gameObject);
         }
     }
