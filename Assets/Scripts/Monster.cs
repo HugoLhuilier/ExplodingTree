@@ -6,10 +6,20 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    
 
-    [SerializeField] 
 
+    [SerializeField] Sprite[] Sprites;
+
+    /*
+    [SerializeField] Sprite ecureuilRobotSprite;
+    [SerializeField] Sprite cochonSprite;
+    [SerializeField] Sprite ecureuilVolantSprite;
+    [SerializeField] Sprite cochonVolantSprite;
+    [SerializeField] Sprite pivertRobotSprite;
+    [SerializeField] Sprite monkeSprite;
+    [SerializeField] Sprite monkeVolantSprite;
+    [SerializeField] Sprite canardRobotSurEchasseSprite;
+    */
 
 
     private string monsterName;
@@ -27,13 +37,17 @@ public class Monster : MonoBehaviour
 
     private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11.3 or 11.3
 
-    public SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
+    private Sprite sprite;
+
+
     public float changeDuration = 1f;
 
     static private string[] names = {
         "Ecureuil robot",
         "Cochon robot",
         "Ecureuil robot volant",
+        "Cochon robot volant",
         "Pivert robot",
         "Monke robot",
         "Monke robot (volant)",
@@ -44,6 +58,7 @@ public class Monster : MonoBehaviour
         1.8f,
         1f,
         2.3f,
+        1.3f,
         3f,
         2f,
         1.6f,
@@ -54,6 +69,7 @@ public class Monster : MonoBehaviour
         3,
         5,
         2,
+        4,
         1,
         3,
         3,
@@ -64,6 +80,7 @@ public class Monster : MonoBehaviour
         10,
         20,
         6,
+        17,
         3,
         15,
         13,
@@ -90,6 +107,7 @@ public class Monster : MonoBehaviour
         120
     };
 
+    /*
     static private Color[] colors = {       // Used for debugging -- WILL BE REPLACED BY SPRITES PATHS
         Color.red,      // equ rob
         Color.blue,     // cochon
@@ -99,7 +117,7 @@ public class Monster : MonoBehaviour
                         // Monke rob volant
                         // Canard sur échasses
     };
-
+    */
 
 
     public void Consturct(int ty){        // Monster pseudo-constructor
@@ -109,6 +127,7 @@ public class Monster : MonoBehaviour
         HP = Monster.HPs[ty];
         payload = Monster.payloads[ty];
         damage = Monster.damages[ty];
+        sprite = Sprites[ty];
 
         direction = 1;
 
@@ -119,7 +138,6 @@ public class Monster : MonoBehaviour
         spawnPosition = new Vector3(-11*direction,0,0) + new Vector3(0,Random.Range(-4f,2f),0);
 
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = colors[ty];
 
    }
 
