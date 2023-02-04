@@ -13,12 +13,14 @@ public class Monster : MonoBehaviour
     private float HP;
     private float damage;
     private int payload;
+    private int damageTime;
+    private int damageCoolDown;
 
     private bool alive;
     
     private int direction;      // 1 = left ; -1 = right
 
-    private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11 or 11
+    private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11.3 or 11.3
 
     public SpriteRenderer spriteRenderer;
     public float changeDuration = 1f;
@@ -73,6 +75,16 @@ public class Monster : MonoBehaviour
         20
     };
 
+    static private int[] damageTimes = {       // Time between each hit (in frames)
+        75,
+        90,
+        40,
+        10,
+        55,
+        40,
+        120
+    };
+
     static private Color[] colors = {       // Used for debugging -- WILL BE REPLACED BY SPRITES PATHS
         Color.red,      // equ rob
         Color.blue,     // cochon
@@ -112,6 +124,8 @@ public class Monster : MonoBehaviour
     {
         alive = true;
         transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
+        damageCoolDown = damageTime/2;
+        
     }
     
 
@@ -122,9 +136,14 @@ public class Monster : MonoBehaviour
 
             transform.position += new Vector3(direction*speed*0.01f,0,0);
         }
-        else
+        else if(alive)
         {
-            DealDamage();
+            if(damageCoolDown <= 0)
+            {
+                DealDamage();
+                damageCoolDown = damageTime;
+            }
+            damageCoolDown--;
         }
     }
 
@@ -134,7 +153,7 @@ public class Monster : MonoBehaviour
 
         GameObject player = GameObject.Find("Player");
 
-        //player.GetComponent<CharMovements>().GetHit(damage);      // Uncomment when the function is created in PLAYER
+        player.GetComponent<Ressources>().GetHit(damage);      // Uncomment when the function is created in PLAYER
 
         
     }
