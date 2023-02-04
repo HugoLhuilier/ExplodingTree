@@ -23,8 +23,8 @@ public class Ressources : MonoBehaviour
     {
         return resources[number];
     }
-    public void addCoins(int type, int number)
+    public void addCoins(int value)
     {
-        resources[type] += number; 
+        resources[0] += value; 
     }
 }
