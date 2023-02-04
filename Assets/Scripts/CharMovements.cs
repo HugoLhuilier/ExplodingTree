@@ -38,8 +38,8 @@ public class CharMovements : MonoBehaviour
     private float jumpCooldown = 0;
     private bool spacePressed = false;
     private bool dashPressed = false;
-    private bool grimpe = false;
-    private bool devantEchelle = false;
+    public bool grimpe = false;
+    public bool devantEchelle = false;
 
 
     void Awake()
@@ -76,6 +76,11 @@ public class CharMovements : MonoBehaviour
         if (grimpe)
         {
             grimper();
+            body.gravityScale = 0;
+        }
+        else
+        {
+            body.gravityScale = 1;
         }
 
         if (spacePressed)
@@ -115,23 +120,33 @@ public class CharMovements : MonoBehaviour
             isJumping = false;
         }
 
-        devantEchelle = Physics2D.BoxCast(bCollider.bounds.center, bCollider.bounds.size, 0, Vector2.zero, echelleLayer).collider != null;
-
-        if (isGrounded || Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || !devantEchelle)
         {
             grimpe = false;
         }
+
+        if(devantEchelle && !grimpe && Mathf.Abs(verticalAxis) > 0.1f)
+        {
+            grimpe = true;
+        }
+
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(trans.position.x, trans.position.y + 1), Vector2.up, Mathf.Infinity, 29);
+        hit.collider.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
     private void grimper()
     {
         if (verticalAxis > 0.1f)
         {
-            body.AddForce(echelleSpeed * Vector2.up);
+            body.velocity = echelleSpeed * Vector2.up;
         }
         else if(verticalAxis < -0.1f)
         {
-            body.AddForce(echelleSpeed * Vector2.down);
+            body.velocity = echelleSpeed * Vector2.down;
+        }
+        else
+        {
+            body.velocity = Vector2.zero;
         }
     }
 
@@ -165,5 +180,32 @@ public class CharMovements : MonoBehaviour
     private void setCooldowns()
     {
         jumpCooldown += Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Echelle"))
+        {
+            devantEchelle = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Echelle"))
+        {
+            devantEchelle = false;
+        }
+        if (collision.gameObject.layer == 29)
+        {
+            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (grimpe && collision.gameObject.layer == 29)
+        {
+            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        }
     }
 }
