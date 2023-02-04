@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6562867557654345549
+--- !u!1001 &4274507689417484725
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663041, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.31
+      value: 1.435
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663041, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663041, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663051, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_Name
-      value: shooter
+      value: Flower
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663054, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_Sprite
@@ -68,13 +68,17 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
+      propertyPath: triple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: doRotation
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4286125938251988961, guid: 36bfdf15a9dbf7d449388771591ecfa8, type: 3}
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: shootSpeed
       value: 3
@@ -82,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: projectile2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7006730554432678481, guid: be8fa3f95988efd43a7521317a5899da, type: 3}
     - target: {fileID: 5031738427381863036, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27
@@ -99,5 +103,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.32
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5031738426438663050, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}

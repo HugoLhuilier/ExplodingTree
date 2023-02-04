@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663051, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_Name
-      value: shooter
+      value: Nut_Launcher
       objectReference: {fileID: 0}
     - target: {fileID: 5031738426438663054, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_Sprite
@@ -74,7 +74,7 @@ PrefabInstance:
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2875437778165083945, guid: 92655b9d8f2e4134dab0be286369e727, type: 3}
     - target: {fileID: 5031738426438663055, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: shootSpeed
       value: 2
@@ -99,5 +99,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.32
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5031738426438663050, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
