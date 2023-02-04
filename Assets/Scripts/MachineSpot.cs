@@ -21,7 +21,7 @@ public class MachineSpot : MonoBehaviour
 
     public void buy(Ressources player)
     {
-        if (player.getCoins() >= cost)
+        if (player.getCoins(1) >= cost)
         {
             //FAIRE BAISSER THUNES DU JOUEUR
             Instantiate(machine);
