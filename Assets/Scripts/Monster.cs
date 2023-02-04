@@ -5,64 +5,58 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     
-    private string name;
-    private int type;
-    private int speed;
-    private int HP;
-    private int payload;
+    public string name;
+    public int type;
+    public int speed;
+    public int HP;
+    public int payload;
     
-    private int direction;      // 1 = left ; -1 = right
+    public int direction;      // 1 = left ; -1 = right
 
-    private Vector2 spawnPosition;
+    public Vector2 spawnPosition;
 
 
-    static private string[] names = {
+    static public string[] names = {
         "Ecureuil robot",
         "Cochon robot",
         "Ecureuil robot volant"
     };
 
-    static private int[] speeds = {
+    static public int[] speeds = {
         3,
         1,
         4
     };
 
-    static private int[] HPs = {
+    static public int[] HPs = {
         5,
         10,
         2
     };
 
-    static private int[] payloads = {
+    static public int[] payloads = {       // Resources granted when defeated
         5,
         10,
         10
     };
 
-    Monster(int ty, int dir){
-        type = ty;
-        direction = dir;
-        name = names[type];
-        speed = speeds[type];
-        HP = HPs[type];
 
-    }
 
-    
+   
+
+
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        
+        transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
     }
     
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
-        while(HP>0){
-            transform.position = new Vector3(direction*speed*0.01f,0,0) * Time.deltaTime;
+        if(HP>0){
+            transform.position += new Vector3(direction*speed*0.1f,0,0);
         }
     }
 }
