@@ -43,10 +43,25 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Fond
-    uniqueID: 1095851289
+    uniqueID: 1782183729
+    locked: 0
+  - name: Racines
+    uniqueID: 2105911785
     locked: 0
   - name: Murs
     uniqueID: 2345913311
+    locked: 0
+  - name: Murs
+    uniqueID: 3170570515
+    locked: 0
+  - name: Murs2vant
+    uniqueID: 1875505589
+    locked: 0
+  - name: Plateforme
+    uniqueID: 901469213
+    locked: 0
+  - name: "G\xE9n\xE9rateur"
+    uniqueID: 4205093185
     locked: 0
   - name: DecorsMurs
     uniqueID: 943951787

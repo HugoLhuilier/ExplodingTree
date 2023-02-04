@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Ressources : MonoBehaviour
 {
+    
+   
 
     [SerializeField] private GameObject healthBar;
 
@@ -18,16 +20,25 @@ public class Ressources : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         resources[0] = 10;
+<<<<<<< HEAD
         healthPoints = 100;
         slider = healthBar.GetComponent<Slider>();
         slider.enabled = true;
+=======
+        healthPoints = 100f;
+>>>>>>> main
     }
 
 
     private void Update()
     {
+<<<<<<< HEAD
         slider.value = healthPoints;
+=======
+        
+>>>>>>> main
     }
 
 
@@ -41,10 +52,13 @@ public class Ressources : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     public void GetReward(int reward)
     {
         resources[0] += reward;
     }
+=======
+>>>>>>> main
 
     public int getCoins()
     {
@@ -54,4 +68,5 @@ public class Ressources : MonoBehaviour
     {
         resources[0] += value; 
     }
+
 }
