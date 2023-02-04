@@ -22,23 +22,15 @@ public class Ressources : MonoBehaviour
     {
         
         resources[0] = 10;
-<<<<<<< HEAD
         healthPoints = 100;
         slider = healthBar.GetComponent<Slider>();
         slider.enabled = true;
-=======
-        healthPoints = 100f;
->>>>>>> main
     }
 
 
     private void Update()
     {
-<<<<<<< HEAD
         slider.value = healthPoints;
-=======
-        
->>>>>>> main
     }
 
 
@@ -52,13 +44,10 @@ public class Ressources : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
     public void GetReward(int reward)
     {
         resources[0] += reward;
     }
-=======
->>>>>>> main
 
     public int getCoins()
     {
