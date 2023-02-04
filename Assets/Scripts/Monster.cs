@@ -8,27 +8,14 @@ public class Monster : MonoBehaviour
 {
 
 
-    [SerializeField] Sprite[] Sprites;
-
-    /*
-    [SerializeField] Sprite ecureuilRobotSprite;
-    [SerializeField] Sprite cochonSprite;
-    [SerializeField] Sprite ecureuilVolantSprite;
-    [SerializeField] Sprite cochonVolantSprite;
-    [SerializeField] Sprite pivertRobotSprite;
-    [SerializeField] Sprite monkeSprite;
-    [SerializeField] Sprite monkeVolantSprite;
-    [SerializeField] Sprite canardRobotSurEchasseSprite;
-    */
-
-
-    private string monsterName;
-    private int type;
-    private float speed;
-    private float HP;
-    private float damage;
-    private int payload;
-    private int damageTime;
+    [SerializeField] private string monsterName;
+    [SerializeField] private int type;
+    [SerializeField] private float speed;
+    [SerializeField] private float HP;
+    [SerializeField] private float damage;
+    [SerializeField] private int payload;
+    [SerializeField] private int damageTime;
+    
     private int damageCoolDown;
 
     private bool alive;
@@ -127,7 +114,6 @@ public class Monster : MonoBehaviour
         HP = Monster.HPs[ty];
         payload = Monster.payloads[ty];
         damage = Monster.damages[ty];
-        sprite = Sprites[ty];
 
         direction = 1;
 
@@ -137,6 +123,7 @@ public class Monster : MonoBehaviour
 
         spawnPosition = new Vector3(-11*direction,0,0) + new Vector3(0,Random.Range(-4f,2f),0);
 
+        transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
    }
@@ -146,7 +133,6 @@ public class Monster : MonoBehaviour
     void Start()
     {
         alive = true;
-        transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
         damageCoolDown = damageTime/2;
         
     }
