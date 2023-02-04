@@ -15,4 +15,9 @@ public class Dialogs : MonoBehaviour
     {
         
     }
+
+    public void sendMessage()
+    {
+        //A FAIRE
+    }
 }
