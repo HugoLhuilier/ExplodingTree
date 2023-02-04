@@ -20,6 +20,8 @@ public class Monster : MonoBehaviour
 
     private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11 or 11
 
+    public SpriteRenderer spriteRenderer;
+    public float changeDuration = 1f;
 
     static private string[] names = {
         "Ecureuil robot",
@@ -162,6 +164,21 @@ public class Monster : MonoBehaviour
         //player.GetComponent<CharMovements>().GetReward(payload);      // Uncomment when the function is created in PLAYER
 
         Destroy(gameObject);
+    }
+
+    public IEnumerator ChangeToRed()
+    {
+        Color originalColor = spriteRenderer.color;
+        float elapsedTime = 0f;
+        while (elapsedTime < changeDuration)
+        {
+            spriteRenderer.color = Color.Lerp(originalColor, Color.red, elapsedTime / changeDuration);
+            elapsedTime += Time.deltaTime;
+            print("test");
+            yield return null;
+            
+        }
+        spriteRenderer.color = Color.red;
     }
 
 }

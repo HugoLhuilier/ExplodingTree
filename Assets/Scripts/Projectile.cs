@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float damage;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,21 +22,19 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<Monster>(out Monster enemyComponent))
         {
-            //enemyComponent.GetDamage(damage);
-            Impact();
+            enemyComponent.GetDamage(damage);
+            StartCoroutine(enemyComponent.ChangeToRed());
+            Destroy(gameObject);
+
+
         }
 
         else if (other.gameObject.CompareTag("Wall"))
         {
-            Impact();
+            Destroy(gameObject);
+
         }
     }
 
-    public void Impact()
-    {
-        //GameObject particules = Instantiate(impactEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-        //Destroy(particules, 1);
-
-    }
+    
 }
