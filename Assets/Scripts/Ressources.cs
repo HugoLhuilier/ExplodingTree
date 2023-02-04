@@ -21,22 +21,18 @@ public class Ressources : MonoBehaviour
 
     public void GetHit(float damage)
     {
-<<<<<<< HEAD
+
 
         
         
 
-=======
->>>>>>> e4d0918f1cfbc86577ad6b76664c2f6593874531
+
         healthPoints -= damage;
         if(healthPoints <= 0)
         {
             // Load Gameover screen
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> e4d0918f1cfbc86577ad6b76664c2f6593874531
     }
 
 
