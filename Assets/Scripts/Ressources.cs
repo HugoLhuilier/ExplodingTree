@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Ressources : MonoBehaviour
 {
+
     private int coins;
     public int greenMat;
     public int blueMat;
     public int redMat;
     public int brownMat;
 
+
+
+
+    public int[] resources = new int[4];
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +26,7 @@ public class Ressources : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
     }
 
@@ -31,5 +38,8 @@ public class Ressources : MonoBehaviour
     public void addCoins(int qtt)
     {
         coins += qtt;
+
+        print(resources[1]);
+
     }
 }
