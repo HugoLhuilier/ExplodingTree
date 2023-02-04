@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Ressources : MonoBehaviour
 {
 
-    //[SerializeField] private healthBarOverlay;
+    [SerializeField] private GameObject healthBar;
+
+    private Slider slider;
+
 
     public int[] resources = new int[4];
     private float healthPoints;
@@ -15,12 +20,14 @@ public class Ressources : MonoBehaviour
     {
         resources[0] = 10;
         healthPoints = 100;
+        slider = healthBar.GetComponent<Slider>();
+        slider.enabled = true;
     }
 
 
     private void Update()
     {
-        
+        slider.value = healthPoints;
     }
 
 
