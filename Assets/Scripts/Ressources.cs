@@ -8,7 +8,7 @@ public class Ressources : MonoBehaviour
    
 
     public int[] resources = new int[4];
-    private int healthPoints;
+    private float healthPoints;
     
     // Start is called before the first frame update
     void Start()
@@ -19,18 +19,18 @@ public class Ressources : MonoBehaviour
     }
 
 
-    void GetHit(int damage)
+    public void GetHit(float damage)
     {
-<<<<<<< HEAD
+
         
         
-=======
+
         healthPoints -= damage;
         if(healthPoints <= 0)
         {
             // Load Gameover screen
         }
->>>>>>> origin/TowerDefenseCommun
+
     }
 
 
