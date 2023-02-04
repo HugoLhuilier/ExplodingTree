@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Machines : MonoBehaviour
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     [SerializeField] float time;
     [SerializeField] int compteur;
     [SerializeField] int generation;
@@ -14,21 +13,7 @@ public class Machines : MonoBehaviour
     Boolean touch;
     [SerializeField] GameObject player;
     [SerializeField] int type;
-=======
-=======
->>>>>>> origin/UndergroundTom
-    float compteur = 0;
-    [SerializeField] int profondeur;
-    [SerializeField] int generate;
-    [SerializeField] int resources;
-    [SerializeField] GameObject player;
-    [SerializeField] int type;
-    Boolean collide;
 
-<<<<<<< HEAD
->>>>>>> origin/UndergroundTom
-=======
->>>>>>> origin/UndergroundTom
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +22,7 @@ public class Machines : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         time += Time.deltaTime;
         if (time >= generation)
         {
@@ -51,31 +35,12 @@ public class Machines : MonoBehaviour
             compteur = 0;
         }
         
-=======
-=======
->>>>>>> origin/UndergroundTom
-        compteur += Time.deltaTime;
-        if (compteur >= generate)
-        {
-            compteur -= generate;
-            resources += profondeur;
-        }
-        if (Input.GetKeyDown(KeyCode.E) && collide)
-        {
-            player.GetComponent<PLayerMovement>().resources[type] += resources;
-            resources = 0;
-        }
+
+       
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "player")
-        {
-            collide = true;
-        }
-<<<<<<< HEAD
->>>>>>> origin/UndergroundTom
-    }
+    
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         
@@ -94,7 +59,6 @@ public class Machines : MonoBehaviour
             touch = false;
           
         }
-=======
->>>>>>> origin/UndergroundTom
+
     }
 }
