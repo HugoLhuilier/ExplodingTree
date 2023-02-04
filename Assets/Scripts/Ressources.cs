@@ -18,4 +18,13 @@ public class Ressources : MonoBehaviour
     {
         print(resources[1]);
     }
+
+    public int getCoins(int number)
+    {
+        return resources[number];
+    }
+    public void addCoins(int type, int number)
+    {
+        resources[type] += number; 
+    }
 }
