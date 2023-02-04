@@ -30,7 +30,7 @@ public class MachineSpot : MonoBehaviour
         }
         else
         {
-            diagBox.sendMessage("Vous devez posséder " + cost + " pièces pour construire un extracteur ici.");
+            diagBox.sendMessage("Vous devez posséder " + cost + " pièces pour construire un extracteur ici.", 5);
         }
     }
 }
