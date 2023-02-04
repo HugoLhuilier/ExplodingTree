@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 
-public class Dialogs : MonoBehaviour
+public class PLayerMovement : MonoBehaviour
 {
 
     [SerializeField] public int[] resources = new int[4];
@@ -17,10 +17,5 @@ public class Dialogs : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void sendMessage()
-    {
-        //A FAIRE
     }
 }
