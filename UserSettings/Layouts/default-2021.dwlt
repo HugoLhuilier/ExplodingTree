@@ -15,14 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 1920
-    y: -288
-    width: 2560
-    height: 1349.3334
-  m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 300}
+<<<<<<< HEAD
 =======
     x: 0
     y: 43
@@ -32,6 +25,29 @@ MonoBehaviour:
   m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
+=======
+>>>>>>> origin/TowerDefenseAdri
+    x: 1920
+    y: -288
+    width: 2560
+    height: 1349.3334
+  m_ShowMode: 4
+  m_Title: Project
+  m_RootView: {fileID: 7}
+  m_MinSize: {x: 875, y: 300}
+<<<<<<< HEAD
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 989
+  m_ShowMode: 4
+  m_Title: Project
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 875, y: 371}
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -44,6 +60,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 939
+  m_MinSize: {x: 503, y: 321}
+  m_MaxSize: {x: 16192, y: 12117}
+  vertical: 0
+  controlID: 60
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ProjectBrowser
@@ -62,6 +99,7 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 =======
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -81,6 +119,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 60
 >>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
+>>>>>>> origin/TowerDefenseAdri
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,6 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -108,6 +150,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 45
 =======
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -125,6 +169,27 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
+>>>>>>> origin/TowerDefenseAdri
+=======
+=======
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2560
+    height: 1299.3334
+  m_MinSize: {x: 300, y: 300}
+  m_MaxSize: {x: 24288, y: 24288}
+  vertical: 0
+  controlID: 45
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &4
 MonoBehaviour:
@@ -144,6 +209,7 @@ MonoBehaviour:
     x: 1955.3334
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 604.6666
     height: 1299.3334
   m_MinSize: {x: 276, y: 71}
@@ -151,6 +217,16 @@ MonoBehaviour:
     width: 363
     height: 558
   m_MinSize: {x: 201, y: 221}
+>>>>>>> origin/TowerDefenseAdri
+=======
+    width: 363
+    height: 558
+  m_MinSize: {x: 201, y: 221}
+=======
+    width: 604.6666
+    height: 1299.3334
+  m_MinSize: {x: 276, y: 71}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -169,9 +245,16 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: 
 =======
   m_Name: ProjectBrowser
+>>>>>>> origin/TowerDefenseAdri
+=======
+  m_Name: ProjectBrowser
+=======
+  m_Name: 
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_EditorClassIdentifier: 
   m_Children: []
@@ -179,12 +262,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-    y: 0
-    width: 484.66666
-    height: 769.3333
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+<<<<<<< HEAD
 =======
     y: 558
     width: 1466
@@ -192,6 +270,25 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
+=======
+>>>>>>> origin/TowerDefenseAdri
+    y: 0
+    width: 484.66666
+    height: 769.3333
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+<<<<<<< HEAD
+=======
+    y: 558
+    width: 1466
+    height: 381
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 12}
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_Panes:
   - {fileID: 16}
@@ -206,6 +303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ConsoleWindow
@@ -226,6 +324,8 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 0
 =======
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -245,6 +345,29 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
+>>>>>>> origin/TowerDefenseAdri
+=======
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1002
+    width: 1955.3334
+    height: 297.33337
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &7
 MonoBehaviour:
@@ -256,6 +379,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -263,17 +394,30 @@ MonoBehaviour:
   - {fileID: 8}
   - {fileID: 3}
   - {fileID: 9}
+<<<<<<< HEAD
 =======
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
 >>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
+>>>>>>> origin/TowerDefenseAdri
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 1920
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+=======
+>>>>>>> origin/TowerDefenseAdri
     width: 2560
     height: 1349.3334
   m_MinSize: {x: 875, y: 300}
@@ -282,12 +426,16 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
 =======
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &8
 MonoBehaviour:
@@ -299,9 +447,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
 =======
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> origin/TowerDefenseAdri
+=======
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_Name: 
   m_EditorClassIdentifier: 
@@ -310,6 +465,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 2560
     height: 30
@@ -317,6 +473,16 @@ MonoBehaviour:
     y: 969
     width: 1920
     height: 20
+>>>>>>> origin/TowerDefenseAdri
+=======
+    y: 969
+    width: 1920
+    height: 20
+=======
+    y: 0
+    width: 2560
+    height: 30
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -331,6 +497,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -344,6 +511,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 =======
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -360,6 +529,23 @@ MonoBehaviour:
   m_MaxSize: {x: 8096, y: 12117}
   vertical: 1
   controlID: 61
+<<<<<<< HEAD
+>>>>>>> origin/TowerDefenseAdri
+=======
+=======
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1329.3334
+    width: 2560
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &10
 MonoBehaviour:
@@ -382,12 +568,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-    width: 1955.3334
-    height: 1299.3334
-  m_MinSize: {x: 200, y: 300}
-  m_MaxSize: {x: 16192, y: 24288}
-  vertical: 1
-  controlID: 51
+<<<<<<< HEAD
 =======
     width: 1466
     height: 558
@@ -395,6 +576,25 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 62
+=======
+>>>>>>> origin/TowerDefenseAdri
+    width: 1955.3334
+    height: 1299.3334
+  m_MinSize: {x: 200, y: 300}
+  m_MaxSize: {x: 16192, y: 24288}
+  vertical: 1
+  controlID: 51
+<<<<<<< HEAD
+=======
+    width: 1466
+    height: 558
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 62
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &11
 MonoBehaviour:
@@ -405,6 +605,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -423,6 +624,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 52
 =======
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SceneView
   m_EditorClassIdentifier: 
@@ -441,6 +644,27 @@ MonoBehaviour:
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
+>>>>>>> origin/TowerDefenseAdri
+=======
+=======
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1955.3334
+    height: 769.3333
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 52
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &12
 MonoBehaviour:
@@ -451,6 +675,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SceneView
@@ -471,6 +696,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 =======
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -602,6 +829,29 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
+<<<<<<< HEAD
+>>>>>>> origin/TowerDefenseAdri
+=======
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 484.66666
+    y: 0
+    width: 1470.6667
+    height: 769.3333
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
 --- !u!114 &13
 MonoBehaviour:
@@ -612,6 +862,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1466
+    y: 73
+    width: 453
+    height: 918
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_EditorHideFlags: 0
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -628,6 +898,7 @@ MonoBehaviour:
     y: 511.33334
     width: 1954.3334
     height: 211.66669
+<<<<<<< HEAD
 =======
   m_EditorHideFlags: 1
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
@@ -646,11 +917,28 @@ MonoBehaviour:
     width: 453
     height: 918
 >>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
+>>>>>>> origin/TowerDefenseAdri
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+=======
+>>>>>>> origin/TowerDefenseAdri
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -673,6 +961,7 @@ MonoBehaviour:
   - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\vlant\Desktop\projet arbre\ExplodingTree
+<<<<<<< HEAD
 =======
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -684,6 +973,9 @@ MonoBehaviour:
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_LockTracker:
     m_IsLocked: 0
@@ -977,15 +1269,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 1920
-    y: -258
-    width: 483.66666
-    height: 748.3333
+<<<<<<< HEAD
 =======
     x: 0
     y: 73
     width: 362
     height: 537
+=======
+>>>>>>> origin/TowerDefenseAdri
+    x: 1920
+    y: -258
+    width: 483.66666
+    height: 748.3333
+<<<<<<< HEAD
+=======
+    x: 0
+    y: 73
+    width: 362
+    height: 537
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -995,6 +1299,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: a86b0000
       m_LastClickedID: 0
       m_ExpandedIDs: 28fbffff
@@ -1002,6 +1307,16 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: bcfaffff
+>>>>>>> origin/TowerDefenseAdri
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: bcfaffff
+=======
+      m_SelectedIDs: a86b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 28fbffff
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1019,9 +1334,16 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 5}
 =======
         m_ClientGUIView: {fileID: 4}
+>>>>>>> origin/TowerDefenseAdri
+=======
+        m_ClientGUIView: {fileID: 4}
+=======
+        m_ClientGUIView: {fileID: 5}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
       m_SearchString: 
     m_ExpandedScenes: []
@@ -1051,15 +1373,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 2404.6667
-    y: -258
-    width: 1468.6667
-    height: 748.3333
+<<<<<<< HEAD
 =======
     x: 363
     y: 73
     width: 1101
     height: 537
+=======
+>>>>>>> origin/TowerDefenseAdri
+    x: 2404.6667
+    y: -258
+    width: 1468.6667
+    height: 748.3333
+<<<<<<< HEAD
+=======
+    x: 363
+    y: 73
+    width: 1101
+    height: 537
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1071,11 +1405,20 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       snapOffset: {x: -101, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
 =======
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -101, y: -26}
+>>>>>>> origin/TowerDefenseAdri
+=======
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -101, y: -26}
+=======
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
       snapCorner: 3
       id: Tool Settings
@@ -1120,9 +1463,16 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 25.333334}
 =======
       snapOffset: {x: 0, y: 0}
+>>>>>>> origin/TowerDefenseAdri
+=======
+      snapOffset: {x: 0, y: 0}
+=======
+      snapOffset: {x: 0, y: 25.333334}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1327,6 +1677,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.2987433, y: 0.46470827, z: -0.13303801}
     speed: 2
     m_Value: {x: 0.2987433, y: 0.46470827, z: -0.13303801}
@@ -1334,6 +1685,16 @@ MonoBehaviour:
     m_Target: {x: 0.6455202, y: -0.57868105, z: -0.054336984}
     speed: 2
     m_Value: {x: 0.6455202, y: -0.57868105, z: -0.054336984}
+>>>>>>> origin/TowerDefenseAdri
+=======
+    m_Target: {x: 0.6455202, y: -0.57868105, z: -0.054336984}
+    speed: 2
+    m_Value: {x: 0.6455202, y: -0.57868105, z: -0.054336984}
+=======
+    m_Target: {x: 0.2987433, y: 0.46470827, z: -0.13303801}
+    speed: 2
+    m_Value: {x: 0.2987433, y: 0.46470827, z: -0.13303801}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_RenderMode: 0
   m_CameraMode:
@@ -1386,6 +1747,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10.587182
     speed: 2
     m_Value: 10.587182
@@ -1393,6 +1755,16 @@ MonoBehaviour:
     m_Target: 6.1478415
     speed: 2
     m_Value: 6.1478415
+>>>>>>> origin/TowerDefenseAdri
+=======
+    m_Target: 6.1478415
+    speed: 2
+    m_Value: 6.1478415
+=======
+    m_Target: 10.587182
+    speed: 2
+    m_Value: 10.587182
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_Ortho:
     m_Target: 1
@@ -1439,15 +1811,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 2404.6667
-    y: -258
-    width: 1468.6667
-    height: 748.3333
+<<<<<<< HEAD
 =======
     x: 363
     y: 73
     width: 1101
     height: 537
+=======
+>>>>>>> origin/TowerDefenseAdri
+    x: 2404.6667
+    y: -258
+    width: 1468.6667
+    height: 748.3333
+<<<<<<< HEAD
+=======
+    x: 363
+    y: 73
+    width: 1101
+    height: 537
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1460,9 +1844,16 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 1468.6667, y: 727.3333}
 =======
   m_TargetSize: {x: 1101, y: 516}
+>>>>>>> origin/TowerDefenseAdri
+=======
+  m_TargetSize: {x: 1101, y: 516}
+=======
+  m_TargetSize: {x: 1468.6667, y: 727.3333}
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
@@ -1479,15 +1870,27 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
-    m_HBaseRangeMin: -489.5556
-    m_HBaseRangeMax: 489.5556
-    m_VBaseRangeMin: -242.44444
-    m_VBaseRangeMax: 242.44444
+<<<<<<< HEAD
 =======
     m_HBaseRangeMin: -550.5
     m_HBaseRangeMax: 550.5
     m_VBaseRangeMin: -258
     m_VBaseRangeMax: 258
+=======
+>>>>>>> origin/TowerDefenseAdri
+    m_HBaseRangeMin: -489.5556
+    m_HBaseRangeMax: 489.5556
+    m_VBaseRangeMin: -242.44444
+    m_VBaseRangeMax: 242.44444
+<<<<<<< HEAD
+=======
+    m_HBaseRangeMin: -550.5
+    m_HBaseRangeMax: 550.5
+    m_VBaseRangeMin: -258
+    m_VBaseRangeMax: 258
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -1507,15 +1910,27 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
-      width: 1468.6667
-      height: 727.3333
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 734.3334, y: 363.66666}
+<<<<<<< HEAD
 =======
       width: 1101
       height: 516
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 550.5, y: 258}
+=======
+>>>>>>> origin/TowerDefenseAdri
+      width: 1468.6667
+      height: 727.3333
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 734.3334, y: 363.66666}
+<<<<<<< HEAD
+=======
+      width: 1101
+      height: 516
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 550.5, y: 258}
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1524,13 +1939,7 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
-      x: -734.3334
-      y: -363.66666
-      width: 1468.6667
-      height: 727.3333
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2203, y: 1122.5}
+<<<<<<< HEAD
 =======
       x: -550.5
       y: -258
@@ -1539,6 +1948,27 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1101, y: 537}
+=======
+>>>>>>> origin/TowerDefenseAdri
+      x: -734.3334
+      y: -363.66666
+      width: 1468.6667
+      height: 727.3333
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 2203, y: 1122.5}
+<<<<<<< HEAD
+=======
+      x: -550.5
+      y: -258
+      width: 1101
+      height: 516
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1101, y: 537}
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -1566,15 +1996,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-    x: 1920
-    y: 744.0001
-    width: 1954.3334
-    height: 276.33337
+<<<<<<< HEAD
 =======
     x: 0
     y: 631
     width: 1465
     height: 360
+=======
+>>>>>>> origin/TowerDefenseAdri
+    x: 1920
+    y: 744.0001
+    width: 1954.3334
+    height: 276.33337
+<<<<<<< HEAD
+=======
+    x: 0
+    y: 631
+    width: 1465
+    height: 360
+>>>>>>> origin/TowerDefenseAdri
+=======
+>>>>>>> origin/TowerDefenseValt
 >>>>>>> origin/TowerDefenseAdri
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
