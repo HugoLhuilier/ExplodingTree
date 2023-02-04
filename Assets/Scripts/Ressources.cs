@@ -16,7 +16,7 @@ public class Ressources : MonoBehaviour
     }
 
 
-    void GetHit(int damage)
+    public void GetHit(int damage)
     {
         healthPoints -= damage;
         if(healthPoints <= 0)
