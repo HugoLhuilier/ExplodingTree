@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fond
+    uniqueID: 1095851289
+    locked: 0
+  - name: Murs
+    uniqueID: 2345913311
+    locked: 0
+  - name: DecorsMurs
+    uniqueID: 943951787
+    locked: 0
+  - name: Decors
+    uniqueID: 413777499
+    locked: 0
