@@ -113,7 +113,7 @@ TextureImporter:
         width: 385
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_1
       rect:
         serializedVersion: 2
-        x: 485
-        y: 8
-        width: 177
-        height: 202
+        x: 480
+        y: 7
+        width: 176
+        height: 207
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,11 +151,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1566
-        y: 152
+        y: 148
         width: 296
-        height: 64
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_3
       rect:
         serializedVersion: 2
-        x: 2039
-        y: 155
-        width: 5
-        height: 27
+        x: 2032
+        y: 142
+        width: 60
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_4
       rect:
         serializedVersion: 2
-        x: 2169
-        y: 156
-        width: 7
-        height: 26
+        x: 2064
+        y: 48
+        width: 46
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_5
       rect:
         serializedVersion: 2
-        x: 2068
-        y: 53
-        width: 32
-        height: 103
+        x: 2127
+        y: 55
+        width: 28
+        height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_6
       rect:
         serializedVersion: 2
-        x: 2127
-        y: 55
-        width: 29
-        height: 99
+        x: 2169
+        y: 139
+        width: 31
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,10 +257,10 @@ TextureImporter:
         serializedVersion: 2
         x: 952
         y: 0
-        width: 28
+        width: 29
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: Background_ext_layers-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1151
+        x: 1138
         y: 0
-        width: 386
-        height: 29
+        width: 399
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

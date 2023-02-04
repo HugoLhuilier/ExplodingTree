@@ -65,7 +65,7 @@ public class MachineSpot : MonoBehaviour
         }
         else
         {
-            diagBox.sendMessage("Vous devez posséder " + cost + " pièces pour construire un extracteur ici.", 5);
+            diagBox.sendMessage("Vous devez posséder " + cost + " pièces pour construire un extracteur ici.",5f);
         }
     }
     void Create()
@@ -77,9 +77,10 @@ public class MachineSpot : MonoBehaviour
         a.transform.SetParent(w.transform);
         b.transform.SetParent(w.transform);
         c.transform.SetParent(w.transform);
-        print(this.GetComponent<Renderer>().enabled);
-        this.GetComponent<Renderer>().enabled = false;
-        print(this.GetComponent<Renderer>().enabled);
+        
+        this.gameObject.GetComponent<Renderer>().enabled = false;
+        this.gameObject.SetActive(false);
+     
 
 
     }
