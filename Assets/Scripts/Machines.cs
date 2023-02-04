@@ -6,6 +6,7 @@ using UnityEngine;
 public class Machines : MonoBehaviour
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     [SerializeField] float time;
     [SerializeField] int compteur;
     [SerializeField] int generation;
@@ -14,6 +15,8 @@ public class Machines : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] int type;
 =======
+=======
+>>>>>>> origin/UndergroundTom
     float compteur = 0;
     [SerializeField] int profondeur;
     [SerializeField] int generate;
@@ -22,6 +25,9 @@ public class Machines : MonoBehaviour
     [SerializeField] int type;
     Boolean collide;
 
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
     // Start is called before the first frame update
     void Start()
@@ -31,6 +37,7 @@ public class Machines : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         time += Time.deltaTime;
         if (time >= generation)
@@ -45,6 +52,8 @@ public class Machines : MonoBehaviour
         }
         
 =======
+=======
+>>>>>>> origin/UndergroundTom
         compteur += Time.deltaTime;
         if (compteur >= generate)
         {
@@ -64,6 +73,7 @@ public class Machines : MonoBehaviour
         {
             collide = true;
         }
+<<<<<<< HEAD
 >>>>>>> origin/UndergroundTom
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -84,5 +94,7 @@ public class Machines : MonoBehaviour
             touch = false;
           
         }
+=======
+>>>>>>> origin/UndergroundTom
     }
 }

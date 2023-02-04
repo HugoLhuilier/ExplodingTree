@@ -242,7 +242,11 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &386304510
+=======
+--- !u!1 &297598672
+>>>>>>> origin/UndergroundTom
 =======
 --- !u!1 &297598672
 >>>>>>> origin/UndergroundTom
@@ -254,18 +258,24 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 386304513}
   - component: {fileID: 386304512}
   - component: {fileID: 386304511}
   m_Layer: 0
   m_Name: Square
 =======
+=======
+>>>>>>> origin/UndergroundTom
   - component: {fileID: 297598676}
   - component: {fileID: 297598675}
   - component: {fileID: 297598673}
   - component: {fileID: 297598677}
   m_Layer: 0
   m_Name: Square (1)
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,8 +283,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!61 &386304511
 BoxCollider2D:
+=======
+--- !u!114 &297598673
+MonoBehaviour:
+>>>>>>> origin/UndergroundTom
 =======
 --- !u!114 &297598673
 MonoBehaviour:
@@ -283,6 +298,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 386304510}
   m_Enabled: 1
@@ -306,6 +322,8 @@ MonoBehaviour:
   m_EdgeRadius: 0
 --- !u!212 &386304512
 =======
+=======
+>>>>>>> origin/UndergroundTom
   m_GameObject: {fileID: 297598672}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -318,6 +336,9 @@ MonoBehaviour:
   player: {fileID: 1046537683}
   type: 1
 --- !u!212 &297598675
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -325,7 +346,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 386304510}
+=======
+  m_GameObject: {fileID: 297598672}
+>>>>>>> origin/UndergroundTom
 =======
   m_GameObject: {fileID: 297598672}
 >>>>>>> origin/UndergroundTom
@@ -375,7 +400,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &386304513
+=======
+--- !u!4 &297598676
+>>>>>>> origin/UndergroundTom
 =======
 --- !u!4 &297598676
 >>>>>>> origin/UndergroundTom
@@ -385,15 +414,21 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 386304510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.9927883, y: 0.26411536, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
 =======
+=======
+>>>>>>> origin/UndergroundTom
   m_GameObject: {fileID: 297598672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.48, y: -3.46, z: 0}
   m_LocalScale: {x: 4.161559, y: 4.252909, z: 1}
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,8 +436,11 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1037232477
 =======
+=======
+>>>>>>> origin/UndergroundTom
 --- !u!61 &297598677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -430,6 +468,9 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1046537683
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,13 +480,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1037232479}
   - component: {fileID: 1037232478}
 =======
+=======
+>>>>>>> origin/UndergroundTom
   - component: {fileID: 1046537687}
   - component: {fileID: 1046537686}
   - component: {fileID: 1046537685}
   - component: {fileID: 1046537684}
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
   m_Layer: 0
   m_Name: player
@@ -455,8 +502,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!212 &1037232478
 =======
+=======
+>>>>>>> origin/UndergroundTom
 --- !u!61 &1046537684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497,6 +547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resources: 00000000000000000000000000000000
 --- !u!212 &1046537686
+<<<<<<< HEAD
+>>>>>>> origin/UndergroundTom
+=======
 >>>>>>> origin/UndergroundTom
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -504,7 +557,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1037232477}
+=======
+  m_GameObject: {fileID: 1046537683}
+>>>>>>> origin/UndergroundTom
 =======
   m_GameObject: {fileID: 1046537683}
 >>>>>>> origin/UndergroundTom
@@ -544,7 +601,11 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  m_Color: {r: 0.51024055, g: 0.05183338, b: 0.5283019, a: 1}
+>>>>>>> origin/UndergroundTom
 =======
   m_Color: {r: 0.51024055, g: 0.05183338, b: 0.5283019, a: 1}
 >>>>>>> origin/UndergroundTom
@@ -558,7 +619,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1037232479
+=======
+--- !u!4 &1046537687
+>>>>>>> origin/UndergroundTom
 =======
 --- !u!4 &1046537687
 >>>>>>> origin/UndergroundTom
@@ -568,9 +633,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1037232477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.0327551, y: 0.45499822, z: 0}
+=======
+  m_GameObject: {fileID: 1046537683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2, y: -3, z: 0}
+>>>>>>> origin/UndergroundTom
 =======
   m_GameObject: {fileID: 1046537683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
