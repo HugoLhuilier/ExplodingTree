@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class Ressources : MonoBehaviour
 {
+    
+   
 
     public int[] resources = new int[4];
     
     // Start is called before the first frame update
     void Start()
     {
+        
         resources[0] = 10;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         
     }
 
@@ -27,4 +31,5 @@ public class Ressources : MonoBehaviour
     {
         resources[0] += value; 
     }
+
 }
