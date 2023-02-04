@@ -137,7 +137,7 @@ public class Monster : MonoBehaviour
         
     }
 
-    void GetDamage(int damage)
+    public void GetDamage(int damage)
     {
         HP -= damage;
         if (HP <= 0)
