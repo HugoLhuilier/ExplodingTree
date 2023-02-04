@@ -10,18 +10,18 @@ public class Ressources : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        resources[0] = 10;
     }
 
     // Update is called once per frame
     void Update()
     {
-        print(resources[1]);
+        
     }
 
-    public int getCoins(int number)
+    public int getCoins()
     {
-        return resources[number];
+        return resources[0];
     }
     public void addCoins(int value)
     {
