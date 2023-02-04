@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -11,18 +12,16 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int startTime;                 // Initial delay (in s) before the start of the FIRST wave
     [SerializeField] private int cooldownBetweenWaves;      // Delay between waves (in s)
 
-    //[SerializeField] private int easingFactor;
-    [SerializeField] private int numberOfMonsters;
-    [SerializeField] private int numberOfWaves;
 
     // A wave is defined as :
     // { spawnRate (spawns every 10 seconds), numberOfMob1, numberOfMob2, ... , numberOfMobN }
 
 
 
-    public int[][] waves;
+    [SerializeField] private int[][] waves;
 
-
+    private int numberOfMonsters;
+    private int numberOfWaves;
 
     private int timer;                      // timer wave
     private int waveLevel;                  // Number of current wave
@@ -52,13 +51,18 @@ public class Spawner : MonoBehaviour
         timer = -startTime;
         waveLevel = 0;
 
-        waves = new int[2][];
+        waves = new int[7][];
 
         waves[0] = new int[] { 5, 1, 1, 0, 0, 0, 0, 0, 0};
-        waves[1] = new int[] { 5, 0, 1, 1, 0, 0, 0, 0, 0};
-        //waves[2] = new int[] { 2, 0, 3, 0 };
-        //waves[3] = new int[] { 3, 10, 5, 0 };
+        waves[1] = new int[] { 5, 0, 1, 2, 0, 0, 0, 0, 0};
+        waves[2] = new int[] { 5, 2, 3, 1, 2, 0, 0, 0, 1};
+        waves[3] = new int[] { 6, 3, 5, 0, 0, 2, 0, 0, 0 };
+        waves[4] = new int[] { 8, 2, 5, 0, 0, 2, 2, 0, 0 };
+        waves[5] = new int[] { 9, 5, 5, 0, 0, 2, 2, 2, 0 };
+        waves[6] = new int[] { 10, 4, 5, 2, 1, 2, 2, 0, 2 };
 
+        numberOfWaves = waves.Length;
+        numberOfMonsters = waves[0].Length;
 
         Debug.Log("Game start ! Begin of first wave in " + startTime + " seconds");
 
@@ -129,7 +133,7 @@ public class Spawner : MonoBehaviour
 
         List<int> monsterList = new List<int>();
 
-        for (int i = 1; i <= numberOfMonsters; i++)
+        for (int i = 1; i < numberOfMonsters; i++)
         {
             if (waves[waveLevel][i] > 0)
             {
