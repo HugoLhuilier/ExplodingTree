@@ -5,6 +5,8 @@ using UnityEngine;
 public class Ressources : MonoBehaviour
 {
 
+    //[SerializeField] private healthBarOverlay;
+
     public int[] resources = new int[4];
     private float healthPoints;
     
@@ -14,6 +16,13 @@ public class Ressources : MonoBehaviour
         resources[0] = 10;
         healthPoints = 100;
     }
+
+
+    private void Update()
+    {
+        
+    }
+
 
 
     public void GetHit(float damage)
