@@ -30,6 +30,7 @@ public class Machines : MonoBehaviour
         if (touch && Input.GetKeyDown(KeyCode.E))
         {
             player.GetComponent<Ressources>().resources[type] = player.GetComponent<Ressources>().resources[type] + compteur;
+            print(player.GetComponent<Ressources>().resources[type]);
             compteur = 0;
         }
         

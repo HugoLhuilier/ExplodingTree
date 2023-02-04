@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class uiAchat : MonoBehaviour
@@ -12,9 +8,9 @@ public class uiAchat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-        
+
+
+
     }
 
     // Update is called once per frame
@@ -29,10 +25,10 @@ public class uiAchat : MonoBehaviour
 
     {
         print("oui3");
-            if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             print("oui2");
-            Instantiate(typedemachine,this.transform.parent.position, this.transform.parent.rotation);
+            Instantiate(typedemachine, this.transform.parent.position, this.transform.parent.rotation);
             Destroy(this.transform.parent.gameObject);
         }
     }
