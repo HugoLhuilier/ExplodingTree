@@ -71,10 +71,14 @@ public class Monster : MonoBehaviour
         20
     };
 
-    static private Color[] colors = {       // Used for debugging
-        Color.red,
-        Color.blue,
-        Color.green
+    static private Color[] colors = {       // Used for debugging -- WILL BE REPLACED BY SPRITES PATHS
+        Color.red,      // equ rob
+        Color.blue,     // cochon
+        Color.green     // equ rob volant
+                        // Pivert rob
+                        // Monke rob
+                        // Monke rob volant
+                        // Canard sur échasses
     };
 
 
@@ -123,9 +127,14 @@ public class Monster : MonoBehaviour
     }
 
 
-    void DealDamage()
+    void DealDamage()       // Deal 'damage' damage to the player.
     {
-        // Deal 'damage' damage to the player.
+
+        GameObject player = GameObject.Find("Player");
+
+        //player.GetComponent<CharMovements>().GetHit(damage);      // Uncomment when the function is created in PLAYER
+
+        
     }
 
     void GetDamage(int damage)
@@ -146,6 +155,11 @@ public class Monster : MonoBehaviour
         List<GameObject> monstersAlive = GameObject.Find("Spawner").GetComponent<Spawner>().monstersAlive;
 
         monstersAlive.Remove(gameObject);
+
+
+        GameObject player = GameObject.Find("Player");
+
+        //player.GetComponent<CharMovements>().GetReward(payload);      // Uncomment when the function is created in PLAYER
 
         Destroy(gameObject);
     }
