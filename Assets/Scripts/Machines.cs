@@ -39,6 +39,7 @@ public class Machines : MonoBehaviour
         
         if (other.CompareTag("player"))
         {
+            print("entree");
             touch = true;
            
         }
@@ -48,7 +49,7 @@ public class Machines : MonoBehaviour
        
         if (other.CompareTag("player"))
         {
-
+            print("sortie");
             touch = false;
           
         }
