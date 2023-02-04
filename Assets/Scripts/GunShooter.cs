@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class GunShooter : MonoBehaviour
 {
+    [SerializeField] private bool doRotation;
+
     //Tir de projectile
     [SerializeField] private GameObject gun;
     public float shootSpeed;
     [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject projectile2;
     [SerializeField] private float fireForce;
     public float damage;
     [SerializeField] private Transform firePoint;
@@ -29,13 +32,22 @@ public class GunShooter : MonoBehaviour
     public float overchargeTime = 0f;
     public bool overcharge = false;
 
+    //Animation
+    //private Animator myAnimator;
+    //private SpriteRenderer mySpriteRenderer;
 
+    //private void Awake()
+    //{
+    //    myAnimator = transform.GetComponent<Animator>();
+    //    mySpriteRenderer = GetComponent<SpriteRenderer>();
+
+    //}
 
     void Start()
     {
         brokenIcon.SetActive(false);
 
-
+        
         monsterArray = GameObject.FindGameObjectsWithTag("Monster");
         closestDistance = range;
         inRange = false;
@@ -120,11 +132,17 @@ public class GunShooter : MonoBehaviour
             yield return new WaitForFixedUpdate();
         }
         float aimAngle = Mathf.Atan2(closestMonster.transform.position.y - transform.position.y, closestMonster.transform.position.x - transform.position.x) * Mathf.Rad2Deg;
-        gun.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
         GameObject bullet = Instantiate(projectile, firePoint.position, Quaternion.Euler(new Vector3(0, 0, aimAngle)));
         bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(closestMonster.transform.position.x - transform.position.x, closestMonster.transform.position.y - transform.position.y).normalized * fireForce, ForceMode2D.Impulse);
         bullet.GetComponent<Projectile>().damage = damage;
+        //myAnimator.SetTrigger("Fire");
         Destroy(bullet, 7);
+        //rotation
+        if(doRotation)
+        {
+            gun.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
+
+        }
         yield return new WaitForSeconds(time);
         StartCoroutine(Shoot(shootSpeed));
 
