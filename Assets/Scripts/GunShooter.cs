@@ -6,7 +6,7 @@ public class GunShooter : MonoBehaviour
 {
     //Tir de projectile
     [SerializeField] private GameObject gun;
-    [SerializeField] private float shootTime;
+    public float shootSpeed;
     [SerializeField] private GameObject projectile;
     [SerializeField] private float fireForce;
     public float damage;
@@ -25,6 +25,9 @@ public class GunShooter : MonoBehaviour
     private bool broken = false;
     [SerializeField] private GameObject brokenIcon;
 
+    //Overcharge
+    public float overchargeTime = 0f;
+    public bool overcharge = false;
 
 
 
@@ -45,9 +48,10 @@ public class GunShooter : MonoBehaviour
                 closestDistance = distance;
                 closestMonster = obj;
                 inRange = true;
+                
             }
         }
-        StartCoroutine(Shoot(shootTime));
+        StartCoroutine(Shoot(shootSpeed));
 
     }
 
@@ -67,8 +71,17 @@ public class GunShooter : MonoBehaviour
         else
         {
             probability += 0.00005f * Time.deltaTime;
-            print(probability);
             TargetClosest();
+        }
+        if(overchargeTime > 0f)
+        {
+            overchargeTime -= Time.deltaTime;
+            if (overchargeTime < 0f)
+            {
+                shootSpeed *= 4f;
+                overcharge = false;
+
+            }
         }
 
     }
@@ -80,6 +93,7 @@ public class GunShooter : MonoBehaviour
         probability = 0f;
     }
 
+    
     void TargetClosest()
     {
         monsterArray = GameObject.FindGameObjectsWithTag("Monster");
@@ -95,25 +109,24 @@ public class GunShooter : MonoBehaviour
                 closestDistance = distance;
                 closestMonster = obj;
                 inRange = true;
-                print(distance);
 
             }
         }
     }
-    IEnumerator Shoot(float shootTime)
+    IEnumerator Shoot(float time)
     {
         while (!inRange || broken)
         {
             yield return new WaitForFixedUpdate();
         }
         float aimAngle = Mathf.Atan2(closestMonster.transform.position.y - transform.position.y, closestMonster.transform.position.x - transform.position.x) * Mathf.Rad2Deg;
-        print(aimAngle);
         gun.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
         GameObject bullet = Instantiate(projectile, firePoint.position, Quaternion.Euler(new Vector3(0, 0, aimAngle)));
         bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(closestMonster.transform.position.x - transform.position.x, closestMonster.transform.position.y - transform.position.y).normalized * fireForce, ForceMode2D.Impulse);
+        bullet.GetComponent<Projectile>().damage = damage;
         Destroy(bullet, 7);
-        yield return new WaitForSeconds(shootTime);
-        StartCoroutine(Shoot(shootTime));
+        yield return new WaitForSeconds(time);
+        StartCoroutine(Shoot(shootSpeed));
 
     }
 }

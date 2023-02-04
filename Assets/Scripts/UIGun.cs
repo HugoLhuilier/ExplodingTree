@@ -6,10 +6,10 @@ public class UIGun : MonoBehaviour
 {
     [SerializeField] private GameObject weapon;
     [SerializeField] private GameObject wheel;
-    [SerializeField] private GameObject yellow;
-    [SerializeField] private GameObject blue;
-    [SerializeField] private GameObject red;
-    [SerializeField] private GameObject orange;
+    [SerializeField] private GameObject UIUpgrade;
+    [SerializeField] private GameObject UIRepair;
+    [SerializeField] private GameObject UIOvercharge;
+    [SerializeField] private GameObject UISell;
     [SerializeField] private GameObject radius;
     public float range;
 
@@ -30,24 +30,25 @@ public class UIGun : MonoBehaviour
     private void OnMouseDown()
         {
         GameObject Wheel = Instantiate(wheel, weapon.transform.position, Quaternion.identity);
-        GameObject Yellow = Instantiate(yellow, weapon.transform.position + new Vector3(0, 2), Quaternion.identity);
-        GameObject Blue = Instantiate(blue, weapon.transform.position + new Vector3(2, 0), Quaternion.identity);
-        GameObject Red = Instantiate(red, weapon.transform.position + new Vector3(-2, 0), Quaternion.identity);
-        GameObject Orange = Instantiate(orange, weapon.transform.position + new Vector3(0, -2), Quaternion.identity);
+        GameObject Upgrade = Instantiate(UIUpgrade, weapon.transform.position + new Vector3(0, 2), Quaternion.identity);
+        GameObject Repair = Instantiate(UIRepair, weapon.transform.position + new Vector3(2, 0), Quaternion.identity);
+        GameObject Overcharge = Instantiate(UIOvercharge, weapon.transform.position + new Vector3(-2, 0), Quaternion.identity);
+        GameObject Sell = Instantiate(UISell, weapon.transform.position + new Vector3(0, -2), Quaternion.identity);
         GameObject Radius = Instantiate(radius, weapon.transform.position, Quaternion.identity);
 
 
         Wheel.GetComponent<UIClose>().motherWeapon = weapon;
-        Yellow.GetComponent<UIClose>().motherWeapon = weapon;
-        Blue.GetComponent<UIClose>().motherWeapon = weapon;
-        Red.GetComponent<UIClose>().motherWeapon = weapon;
-        Orange.GetComponent<UIClose>().motherWeapon = weapon;
+        Upgrade.GetComponent<UIClose>().motherWeapon = weapon;
+        Repair.GetComponent<UIClose>().motherWeapon = weapon;
+        Overcharge.GetComponent<UIClose>().motherWeapon = weapon;
+        Sell.GetComponent<UIClose>().motherWeapon = weapon;
         Radius.GetComponent<UIClose>().motherWeapon = weapon;
 
         Radius.GetComponent<Radius>().motherWeapon = weapon;
-        Yellow.GetComponent<UpgradeGun>().motherWeapon = weapon;
-        Red.GetComponent<SellGun>().motherWeapon = weapon;
-        Blue.GetComponent<RepairGun>().motherWeapon = weapon;
+        Upgrade.GetComponent<UpgradeGun>().motherWeapon = weapon;
+        Sell.GetComponent<SellGun>().motherWeapon = weapon;
+        Repair.GetComponent<RepairGun>().motherWeapon = weapon;
+        Overcharge.GetComponent<OverchargeGun>().motherWeapon = weapon;
 
     }
 }
