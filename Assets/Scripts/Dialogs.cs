@@ -16,7 +16,7 @@ public class Dialogs : MonoBehaviour
         
     }
 
-    public void sendMessage()
+    public void sendMessage(string msg)
     {
         //A FAIRE
     }

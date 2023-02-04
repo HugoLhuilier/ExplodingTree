@@ -6,6 +6,7 @@ public class MachineSpot : MonoBehaviour
 {
     private int cost;
     GameObject machine;
+    Dialogs diagBox;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,13 @@ public class MachineSpot : MonoBehaviour
     {
         if (player.getCoins() >= cost)
         {
-            //FAIRE BAISSER THUNES DU JOUEUR
+            player.addCoins(-cost);
             Instantiate(machine);
+            Destroy(this.gameObject);
         }
         else
         {
-
+            diagBox.sendMessage("Vous devez posséder " + cost + " pièces pour construire un extracteur ici.");
         }
     }
 }
