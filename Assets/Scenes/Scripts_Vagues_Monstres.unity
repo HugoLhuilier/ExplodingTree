@@ -339,16 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterPrefab: {fileID: 8355488903012431090, guid: f2087192de9fb954e85c628fd8c332ea, type: 3}
-  spawnPoints:
-  - {x: 11.3, y: 2}
-  - {x: 11.3, y: -1}
-  - {x: 11.3, y: -4}
-  - {x: 11.3, y: 2}
-  - {x: 11.3, y: -1}
-  - {x: 11.3, y: -4}
-  startTime: 1
-  waveDuration: 10
-  breakDuration: 10
-  startingSpawnsPerSeconds: 1
-  easingFactor: 0
-  possibleEnnemies: 
+  startTime: 3
+  cooldownBetweenWaves: 3
+  numberOfMonsters: 8
+  numberOfWaves: 1
+  monstersAlive: []

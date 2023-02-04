@@ -1,53 +1,110 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
     
-    public string name;
-    public int type;
-    public int speed;
-    public int HP;
-    public int payload;
+    private string monsterName;
+    private int type;
+    private float speed;
+    private int HP;
+    private int damage;
+    private int payload;
+
+    private bool alive;
     
-    public int direction;      // 1 = left ; -1 = right
+    private int direction;      // 1 = left ; -1 = right
 
-    public Vector2 spawnPosition;
+    private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11 or 11
 
 
-    static public string[] names = {
+    static private string[] names = {
         "Ecureuil robot",
         "Cochon robot",
-        "Ecureuil robot volant"
+        "Ecureuil robot volant",
+        "Pivert robot",
+        "Monke robot",
+        "Monke robot (volant)",
+        "Canard robot sur des échasses"
     };
 
-    static public int[] speeds = {
+    static private float[] speeds = {
+        1.8f,
+        1f,
+        2.3f,
+        3f,
+        2f,
+        1.6f,
+        1.8f
+    };
+
+    static private int[] damages = {
         3,
+        5,
+        2,
         1,
+        3,
+        3,
         4
     };
 
-    static public int[] HPs = {
-        5,
+    static private int[] HPs = {
         10,
-        2
+        20,
+        6,
+        3,
+        15,
+        13,
+        15
     };
 
-    static public int[] payloads = {       // Resources granted when defeated
+    static private int[] payloads = {       // Resources granted when defeated
         5,
         10,
-        10
+        10,
+        8,
+        15,
+        18,
+        20
+    };
+
+    static private Color[] colors = {       // Used for debugging
+        Color.red,
+        Color.blue,
+        Color.green
     };
 
 
 
-   
+    public void Consturct(int ty){        // Monster pseudo-constructor
+        type = ty;
+        name = Monster.names[ty];
+        speed = Monster.speeds[ty];
+        HP = Monster.HPs[ty];
+        payload = Monster.payloads[ty];
+        damage = Monster.damages[ty];
+
+        direction = 1;
+
+        if (Random.Range(0,2) == 0){
+            direction = -1;
+        }
+
+        spawnPosition = new Vector3(-11*direction,0,0) + new Vector3(0,Random.Range(-4f,2f),0);
+
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = colors[ty];
+
+   }
 
 
     // Start is called before the first frame update
     void Start()
     {
+        alive = true;
         transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
     }
     
@@ -55,8 +112,42 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(HP>0){
-            transform.position += new Vector3(direction*speed*0.1f,0,0);
+        if(alive && Mathf.Abs(transform.position.x) > 1.5f){
+
+            transform.position += new Vector3(direction*speed*0.01f,0,0);
+        }
+        else
+        {
+            DealDamage();
         }
     }
+
+
+    void DealDamage()
+    {
+        // Deal 'damage' damage to the player.
+    }
+
+    void GetDamage(int damage)
+    {
+        HP -= damage;
+        if (HP <= 0)
+        {
+            Kill();
+        }
+    }
+
+    void Kill()
+    {
+        alive = false;
+
+        // Do some action to reward the player (getcomponent<> my balls) with material
+
+        List<GameObject> monstersAlive = GameObject.Find("Spawner").GetComponent<Spawner>().monstersAlive;
+
+        monstersAlive.Remove(gameObject);
+
+        Destroy(gameObject);
+    }
+
 }
