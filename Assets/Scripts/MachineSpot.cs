@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MachineSpot : MonoBehaviour
 {
-    public int cost;
-    public GameObject machine;
+    private int cost;
+    GameObject machine;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +19,11 @@ public class MachineSpot : MonoBehaviour
         
     }
 
-    void wantBuy(Ressources player)
+    public void buy(Ressources player)
     {
         if (player.getCoins() >= cost)
         {
-            player.addCoins(-cost);
+            //FAIRE BAISSER THUNES DU JOUEUR
             Instantiate(machine);
         }
         else

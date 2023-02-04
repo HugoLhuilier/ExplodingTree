@@ -19,6 +19,8 @@ public class CharMovements : MonoBehaviour
     [SerializeField] private float maxFallSpeed;
     [SerializeField] private float sustainJumpPow;
     [SerializeField] private float dashSpeed;
+    [SerializeField] private LayerMask echelleLayer;
+    [SerializeField] private float echelleSpeed;
 
     private Rigidbody2D body;
     private BoxCollider2D bCollider;
@@ -36,6 +38,8 @@ public class CharMovements : MonoBehaviour
     private float jumpCooldown = 0;
     private bool spacePressed = false;
     private bool dashPressed = false;
+    private bool grimpe = false;
+    private bool devantEchelle = false;
 
 
     void Awake()
@@ -69,6 +73,11 @@ public class CharMovements : MonoBehaviour
             Run();
         }
 
+        if (grimpe)
+        {
+            grimper();
+        }
+
         if (spacePressed)
         {
             Jump();
@@ -100,9 +109,29 @@ public class CharMovements : MonoBehaviour
         onWall = Physics2D.BoxCast(bCollider.bounds.center, bCollider.bounds.size, 0, new Vector2(facing, 0), 0.1f, wallLayer).collider != null;
         isFalling = body.velocity.y < 0;
         canMove = wallJumpCooldown >= 0;
+
         if (isGrounded || jumpCooldown > 0 || Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
+        }
+
+        devantEchelle = Physics2D.BoxCast(bCollider.bounds.center, bCollider.bounds.size, 0, Vector2.zero, echelleLayer).collider != null;
+
+        if (isGrounded || Input.GetKeyUp(KeyCode.Space))
+        {
+            grimpe = false;
+        }
+    }
+
+    private void grimper()
+    {
+        if (verticalAxis > 0.1f)
+        {
+            body.AddForce(echelleSpeed * Vector2.up);
+        }
+        else if(verticalAxis < -0.1f)
+        {
+            body.AddForce(echelleSpeed * Vector2.down);
         }
     }
 
