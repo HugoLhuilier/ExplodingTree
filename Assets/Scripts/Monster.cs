@@ -153,7 +153,7 @@ public class Monster : MonoBehaviour
 
         GameObject player = GameObject.Find("Player");
 
-        //player.GetComponent<CharMovements>().GetHit(damage);      // Uncomment when the function is created in PLAYER
+        player.GetComponent<Ressources>().GetHit(damage);      // Uncomment when the function is created in PLAYER
 
         
     }
