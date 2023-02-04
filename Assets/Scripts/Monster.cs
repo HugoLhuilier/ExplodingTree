@@ -7,6 +7,11 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     
+
+    [SerializeField] 
+
+
+
     private string monsterName;
     private int type;
     private float speed;
@@ -132,7 +137,7 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(alive && Mathf.Abs(transform.position.x) > 1.5f){
+        if(alive && Mathf.Abs(transform.position.x) > 1.8f){
 
             transform.position += new Vector3(direction*speed*0.01f,0,0);
         }
@@ -155,6 +160,7 @@ public class Monster : MonoBehaviour
 
         player.GetComponent<Ressources>().GetHit(damage);      // Uncomment when the function is created in PLAYER
 
+        Kill();
         
     }
 
@@ -180,7 +186,7 @@ public class Monster : MonoBehaviour
 
         GameObject player = GameObject.Find("Player");
 
-        //player.GetComponent<CharMovements>().GetReward(payload);      // Uncomment when the function is created in PLAYER
+        player.GetComponent<Ressources>().GetReward(payload);
 
         Destroy(gameObject);
     }

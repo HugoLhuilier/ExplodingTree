@@ -41,7 +41,10 @@ public class Ressources : MonoBehaviour
         }
     }
 
-
+    public void GetReward(int reward)
+    {
+        resources[0] += reward;
+    }
 
     public int getCoins()
     {
