@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - player
-<<<<<<< HEAD
-  - UIObject
-  - Monster
-  - Echelle
-=======
-  - Music
->>>>>>> origin/MiloTemp1
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -42,40 +34,10 @@ TagManager:
   - 
   - 
   - 
-  - SOL
-  - Mur
-  - Echelle
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Fond
-    uniqueID: 1782183729
-    locked: 0
-  - name: Racines
-    uniqueID: 2105911785
-    locked: 0
-  - name: Murs
-    uniqueID: 2345913311
-    locked: 0
-  - name: Murs
-    uniqueID: 3170570515
-    locked: 0
-  - name: Murs2vant
-    uniqueID: 1875505589
-    locked: 0
-  - name: Plateforme
-    uniqueID: 901469213
-    locked: 0
-  - name: "G\xE9n\xE9rateur"
-    uniqueID: 4205093185
-    locked: 0
-  - name: DecorsMurs
-    uniqueID: 943951787
-    locked: 0
-  - name: Decors
-    uniqueID: 413777499
-    locked: 0
-  - name: Player
-    uniqueID: 544388295
     locked: 0
