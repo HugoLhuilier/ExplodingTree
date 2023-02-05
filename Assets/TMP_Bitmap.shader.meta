@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7d08d5325ce8efa44a1581a651a023ba
+=======
+guid: 5d2710bd781c5c042986e9761c29012e
+>>>>>>> origin/TempA3
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []

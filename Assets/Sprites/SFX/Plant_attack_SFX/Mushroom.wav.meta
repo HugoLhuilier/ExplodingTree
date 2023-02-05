@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a5b1eb5d06d81c24b95f587016a3e990
+=======
+guid: ff3c45ea510db45468e690c68073df62
+>>>>>>> origin/TempA3
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

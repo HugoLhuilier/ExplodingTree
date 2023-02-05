@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0efc029c3aef5974bbdc614eec2641db
+=======
+guid: 350d4459160350e4aaf7cd03197ce6cf
+>>>>>>> origin/TempA3
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5265097195d91ec4c9ad3dcad9a1b85c
+=======
+guid: 824853a19645d41478a2834c1a34c66e
+>>>>>>> origin/TempA3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
