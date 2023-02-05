@@ -37,19 +37,11 @@ public class Ressources : MonoBehaviour
 
     public void GetHit(float damage)
     {
-<<<<<<< HEAD
-
-=======
->>>>>>> 284e3353710eb6c4aba53de4736ba3ef33c27bf7
         healthPoints -= damage;
         if(healthPoints <= 0)
         {
             // Load Gameover screen
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 284e3353710eb6c4aba53de4736ba3ef33c27bf7
     }
 
     public void GetReward(int reward)
