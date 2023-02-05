@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - player
-  - Monster
   - UIObject
-  - Wall
+  - Monster
+  - Echelle
   layers:
   - Default
   - TransparentFX
@@ -38,9 +38,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - SOL
+  - Mur
+  - Echelle
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -71,4 +71,7 @@ TagManager:
     locked: 0
   - name: Decors
     uniqueID: 413777499
+    locked: 0
+  - name: Player
+    uniqueID: 544388295
     locked: 0

@@ -28,8 +28,8 @@ public class MachineSpot : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { 
-        
+    {
+        print("début");
     }
 
     // Update is called once per frame
@@ -38,7 +38,8 @@ public class MachineSpot : MonoBehaviour
         distance = Vector2.Distance(pt.position, this.transform.position);
         if (distance < distancemax)
         {
-            
+            print("range");
+
             if (Input.GetKeyDown(KeyCode.F) && player.GetComponent<Ressources>().getCoins() > price )
             {
                 print("oui");
@@ -70,10 +71,10 @@ public class MachineSpot : MonoBehaviour
     }
     void Create()
     {
-        w = Instantiate(wheel, this.transform.position, Quaternion.identity);
-        a = Instantiate(red, this.transform.position + new Vector3(0, 1), Quaternion.identity);
-        b = Instantiate(blue, this.transform.position + new Vector3(0, -1), Quaternion.identity);
-        c = Instantiate(orange, this.transform.position + new Vector3(1, 0), Quaternion.identity);
+        w = Instantiate(wheel, this.transform.position + new Vector3(0, -0.5f), Quaternion.identity);
+        a = Instantiate(red, this.transform.position + new Vector3(0, 0.5f), Quaternion.identity);
+        b = Instantiate(blue, this.transform.position + new Vector3(0, -1.5f), Quaternion.identity);
+        c = Instantiate(orange, this.transform.position + new Vector3(1, -0.5f), Quaternion.identity);
         a.transform.SetParent(w.transform);
         b.transform.SetParent(w.transform);
         c.transform.SetParent(w.transform);
