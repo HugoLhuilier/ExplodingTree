@@ -7,7 +7,7 @@ public class updateInterface : MonoBehaviour
 {
     [SerializeField] Text red;
     [SerializeField] Text blue;
-    [SerializeField] Text orange;
+    [SerializeField] Text green;
     [SerializeField] Text pieces;
     [SerializeField] GameObject perso;
     int[] resources;
@@ -16,10 +16,10 @@ public class updateInterface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        red = GameObject.Find("Vert").GetComponent<Text>();
+        green = GameObject.Find("Vert").GetComponent<Text>();
         pieces = GameObject.Find("Pièces").GetComponent<Text>();
         blue = GameObject.Find("Bleu").GetComponent<Text>();
-        orange = GameObject.Find("Orange").GetComponent<Text>();
+        red = GameObject.Find("Rouge").GetComponent<Text>();
         resources = perso.GetComponent<Ressources>().resources;
        
 
@@ -33,7 +33,7 @@ public class updateInterface : MonoBehaviour
         pieces.text = perso.GetComponent<Ressources>().resources[0].ToString();
         red.text = perso.GetComponent<Ressources>().resources[1].ToString();
         blue.text =  perso.GetComponent<Ressources>().resources[2].ToString();
-        orange.text = perso.GetComponent<Ressources>().resources[3].ToString();
+        green.text = perso.GetComponent<Ressources>().resources[3].ToString();
 
 
 

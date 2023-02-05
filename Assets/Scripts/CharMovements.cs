@@ -125,14 +125,18 @@ public class CharMovements : MonoBehaviour
             grimpe = false;
         }
 
-        if(devantEchelle && !grimpe && Mathf.Abs(verticalAxis) > 0.1f)
+        if (devantEchelle && !grimpe && Mathf.Abs(verticalAxis) > 0.1f)
         {
             grimpe = true;
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(new Vector2(trans.position.x, trans.position.y + 1), Vector2.up, Mathf.Infinity, 29);
-        hit.collider.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(trans.position.x, trans.position.y + 1), Vector2.up, Mathf.Infinity, 6);
+        if (hit.collider != null)
+        {
+            hit.collider.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        }
     }
+
 
     private void grimper()
     {
@@ -195,7 +199,7 @@ public class CharMovements : MonoBehaviour
         {
             devantEchelle = false;
         }
-        if (collision.gameObject.layer == 29)
+        if (collision.gameObject.layer == 6)
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }
@@ -203,7 +207,7 @@ public class CharMovements : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (grimpe && collision.gameObject.layer == 29)
+        if (grimpe && collision.gameObject.layer == 6)
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         }

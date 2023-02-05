@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7926666126290230098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.3085566, y: 0.6810209, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.32, y: 0.32, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,10 +71,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 413777499
+  m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca8ae2ef61e21724383c0e241105763c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,12 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7496c6a24481324daa48d8f07106654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pt: {fileID: 1666194194049364864, guid: 3a9142d9c50fcbb4487d9b50b2a3fb48, type: 3}
-  player: {fileID: 1666194194049364866, guid: 3a9142d9c50fcbb4487d9b50b2a3fb48, type: 3}
+  pt: {fileID: 1666194194049364864, guid: ce27bc30de5dea642b745e3e9885429e, type: 3}
+  player: {fileID: 1666194194049364866, guid: ce27bc30de5dea642b745e3e9885429e, type: 3}
   distancemax: 5
   price: 0
-  UIAchat: {fileID: 0}
-  wheel: {fileID: 3127285987487237232, guid: 4b09ae246bbd7ef498ffdcaba250a3e9, type: 3}
-  blue: {fileID: 2480779865622681743, guid: b6c1cc019b6a00d4eb2cbba2cd600273, type: 3}
-  red: {fileID: 2480779865622681743, guid: f7bc1a0cd0078de458a658b52736f3cd, type: 3}
-  orange: {fileID: 2480779865622681743, guid: 5ae449ca6b66ea6409687999dc0767f1, type: 3}
+  UIAchat: {fileID: 5536240471993772416, guid: e3cba87e0a95b2d4280cb6b6043fb2d8, type: 3}
+  wheel: {fileID: 8860867528094513406, guid: 64e3b6e9bb4f0f44cb6da51abac215e3, type: 3}
+  blue: {fileID: 2480779865622681743, guid: 3baa305e3de698646bccdb4fde3308fc, type: 3}
+  red: {fileID: 2480779865622681743, guid: 7e9be81c6dd215d48865f1dab3570139, type: 3}
+  orange: {fileID: 2480779865622681743, guid: 54dc4e4b71f0e724182c3c59641f4d1d, type: 3}

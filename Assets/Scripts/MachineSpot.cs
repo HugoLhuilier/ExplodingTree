@@ -12,8 +12,8 @@ public class MachineSpot : MonoBehaviour
     [SerializeField] Transform pt;
     [SerializeField] GameObject player;
     float distance;
-    [SerializeField] float distancemax = 5;
-    [SerializeField] int price;
+    [SerializeField] float distancemax = 3;
+    [SerializeField] int price =2;
     [SerializeField] GameObject UIAchat;
     GameObject a;
     GameObject b;
@@ -28,8 +28,8 @@ public class MachineSpot : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { 
-        
+    {
+        player = GameObject.FindGameObjectsWithTag("player")[0];
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class MachineSpot : MonoBehaviour
         if (distance < distancemax)
         {
             
-            if (Input.GetKeyDown(KeyCode.F) && player.GetComponent<Ressources>().getCoins() > price )
+            if (Input.GetKeyDown(KeyCode.F) && player.GetComponent<Ressources>().getCoins() >= price )
             {
                 print("oui");
                 Create();
@@ -70,10 +70,10 @@ public class MachineSpot : MonoBehaviour
     }
     void Create()
     {
-        w = Instantiate(wheel, this.transform.position, Quaternion.identity);
-        a = Instantiate(red, this.transform.position + new Vector3(0, 1), Quaternion.identity);
-        b = Instantiate(blue, this.transform.position + new Vector3(0, -1), Quaternion.identity);
-        c = Instantiate(orange, this.transform.position + new Vector3(1, 0), Quaternion.identity);
+        w = Instantiate(wheel, this.transform.position + new Vector3(0, -0.5f), Quaternion.identity);
+        a = Instantiate(red, this.transform.position + new Vector3(0, 0.5f), Quaternion.identity);
+        b = Instantiate(blue, this.transform.position + new Vector3(0, -1.5f), Quaternion.identity);
+        c = Instantiate(orange, this.transform.position + new Vector3(1, -0.5f), Quaternion.identity);
         a.transform.SetParent(w.transform);
         b.transform.SetParent(w.transform);
         c.transform.SetParent(w.transform);
