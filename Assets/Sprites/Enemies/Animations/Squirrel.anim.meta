@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c27e3db9f54f38d409be8c0517134525
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+=======
+guid: 351fc6b1286171841bfc60f352f8c59a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+>>>>>>> origin/TowerDefenseCommunTemp2
   userData: 
   assetBundleName: 
   assetBundleVariant: 

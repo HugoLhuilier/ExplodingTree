@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 61f46213e117cae448ba10904de8a0c4
+=======
+guid: 16e274c8a6be82041b7a7e33b61a4c15
+>>>>>>> origin/TowerDefenseCommunTemp2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

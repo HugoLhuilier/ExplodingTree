@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0faff276327c78b4e9e453e68a78a3f9
+=======
+guid: c84033fb8880c0c4cb0735e7d63dd9df
+>>>>>>> origin/TowerDefenseCommunTemp2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> origin/TowerDefenseCommunTemp2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> origin/TowerDefenseCommunTemp2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> origin/TowerDefenseCommunTemp2
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,6 +119,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: Nut_Launcher_Cannonl_0
@@ -230,6 +247,9 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+    sprites: []
+>>>>>>> origin/TowerDefenseCommunTemp2
     outline: []
     physicsShape: []
     bones: []
@@ -240,6 +260,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable:
       Nut_Launcher_Cannonl_1: 1204102445
       Nut_Launcher_Cannonl_5: 1832883154
@@ -247,6 +268,9 @@ TextureImporter:
       Nut_Launcher_Cannonl_0: 162844726
       Nut_Launcher_Cannonl_4: -1785092257
       Nut_Launcher_Cannonl_2: 1726021312
+=======
+    nameFileIdTable: {}
+>>>>>>> origin/TowerDefenseCommunTemp2
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 14b3aae5264b6b54f863fc1efa8afab3
+=======
+guid: b737efc1725df7044983838956ec8c51
+>>>>>>> origin/TowerDefenseCommunTemp2
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

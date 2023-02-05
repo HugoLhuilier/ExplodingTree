@@ -68,7 +68,7 @@ void Start()
         waves = new int[3][];
 
         
-        waves[0] = new int[] { 30, 15, 5, 15, 0, 0, 0, 0, 50};
+        waves[0] = new int[] { 10, 15, 5, 15, 0, 0, 0, 0, 50};
         waves[1] = new int[] { 10, 2, 2, 1, 1, 0, 0, 0, 0 };
         waves[2] = new int[] { 20, 5, 5, 5, 5, 5, 5, 5, 5 };
         /*

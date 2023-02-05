@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b5d1e3874d1e8234ca7d945a77e8e70d
+=======
+guid: bcedabcd92d102648b0c92a6aed58814
+>>>>>>> origin/TowerDefenseCommunTemp2
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

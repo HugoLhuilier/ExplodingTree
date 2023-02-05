@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9ae00f64ec1422342b3cb2665d4ca28d
+=======
+guid: bd2f73f067d2e8d4f97aec8032879cc2
+>>>>>>> origin/TowerDefenseCommunTemp2
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []

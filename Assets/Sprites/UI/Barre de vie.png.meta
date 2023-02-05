@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 96bc7c6a9c505f540a321458dc68030c
+=======
+guid: 59f073fe6e6441249a9fa3821d29ebfd
+>>>>>>> origin/TowerDefenseCommunTemp2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/TowerDefenseCommunTemp2
     aniso: 1
     mipBias: 0
     wrapU: 1
