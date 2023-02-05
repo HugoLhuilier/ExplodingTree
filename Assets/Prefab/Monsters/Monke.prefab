@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 617708385, guid: 5684f2d9717cf6048bb6a7fb741395f0, type: 3}
+  m_Sprite: {fileID: 154867862, guid: 61cc12e473482de4da66f43b740f862f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5896691197686773617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e3d5ac4899f2642b2e82da2de30bf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 275469c51a7a8084fa60c6afb503afd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monsterName: Monke
@@ -145,7 +145,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.875, y: 0.84375}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

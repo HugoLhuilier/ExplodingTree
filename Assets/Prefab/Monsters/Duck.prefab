@@ -97,7 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2865297854230212812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e3d5ac4899f2642b2e82da2de30bf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 275469c51a7a8084fa60c6afb503afd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monsterName: Duck

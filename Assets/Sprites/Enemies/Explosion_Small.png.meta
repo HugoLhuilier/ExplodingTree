@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d28dac0e1f49276458af95887fe5deaa
-=======
-guid: cb6d2312c46ab67448b2e6b16bcd0c22
->>>>>>> origin/TempA3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,33 +33,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> origin/TempA3
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> origin/TempA3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 32
->>>>>>> origin/TempA3
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,19 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
->>>>>>> origin/TempA3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,18 +103,15 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Explosion_Small_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 14
-        width: 4
-        height: 4
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e320d5f4a3f9b4aad75506bad5ed00
-      internalID: -111140734
+      spriteID: 92bcbe0151d07cd43ba602d3e173bc99
+      internalID: -1029038839
       vertices: []
       indices: 
       edges: []
@@ -152,10 +129,10 @@ TextureImporter:
       name: Explosion_Small_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 12
-        width: 9
-        height: 9
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3e4d5dcf4604b44fa28b9e37b3967e7
-      internalID: 68780425
+      spriteID: 25d18b6623af4354c95a774abda6019a
+      internalID: -63554929
       vertices: []
       indices: 
       edges: []
@@ -173,10 +150,10 @@ TextureImporter:
       name: Explosion_Small_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 10
-        width: 13
-        height: 13
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 848c62b5a95ec12418f580d39b94bc76
-      internalID: -1833439050
+      spriteID: a42dcee4de34bde4e9fadd6ea030652f
+      internalID: -935041325
       vertices: []
       indices: 
       edges: []
@@ -194,10 +171,10 @@ TextureImporter:
       name: Explosion_Small_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 5
-        width: 23
-        height: 23
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a396bd1327116b94cb07d1d82f6bb407
-      internalID: 1994843390
+      spriteID: 806322932eb310c40bf137ff73729d93
+      internalID: -107079875
       vertices: []
       indices: 
       edges: []
@@ -215,10 +192,10 @@ TextureImporter:
       name: Explosion_Small_4
       rect:
         serializedVersion: 2
-        x: 132
-        y: 5
-        width: 23
-        height: 23
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9e4a2d01b93cc46b632ca7fcedbf02
-      internalID: 1660873037
+      spriteID: 12a6ac6e7fe94434797241b3abfbddb3
+      internalID: 1463346171
       vertices: []
       indices: 
       edges: []
@@ -236,10 +213,10 @@ TextureImporter:
       name: Explosion_Small_5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 11
-        width: 11
-        height: 11
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57641150320e20445810da79cfb3a24e
-      internalID: -394456673
+      spriteID: b0d222ea206aab946ba35eb58827dc28
+      internalID: -1347552741
       vertices: []
       indices: 
       edges: []
@@ -257,10 +234,10 @@ TextureImporter:
       name: Explosion_Small_6
       rect:
         serializedVersion: 2
-        x: 206
-        y: 14
-        width: 4
-        height: 4
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,35 +245,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 368e81b789c510641ad9e6d65bdaa57d
-      internalID: -1904282177
+      spriteID: 1b6849d754300ee4ebeaa4f8a6dbe624
+      internalID: -1870542780
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> origin/TempA3
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 79facb54e47625544b1f893ac066fe61
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Explosion_Small_6: -1904282177
-      Explosion_Small_2: -1833439050
-      Explosion_Small_4: 1660873037
-      Explosion_Small_5: -394456673
-      Explosion_Small_0: -111140734
-      Explosion_Small_1: 68780425
-      Explosion_Small_3: 1994843390
->>>>>>> origin/TempA3
+      Explosion_Small_6: -1870542780
+      Explosion_Small_2: -935041325
+      Explosion_Small_4: 1463346171
+      Explosion_Small_5: -1347552741
+      Explosion_Small_0: -1029038839
+      Explosion_Small_1: -63554929
+      Explosion_Small_3: -107079875
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
