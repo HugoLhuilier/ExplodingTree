@@ -48,10 +48,14 @@ ExportedObj/
 *.pdb.meta
 *.mdb.meta
 <<<<<<< HEAD
+<<<<<<< HEAD
 # *.meta
 =======
 #*.meta
 >>>>>>> origin/TempA3
+=======
+#*.meta
+>>>>>>> origin/MiloTemp1
 
 # Unity3D generated file on crash reports
 sysinfo.txt

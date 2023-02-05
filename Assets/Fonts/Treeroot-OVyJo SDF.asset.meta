@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3df93114cdc2acb43a9724ec09c113c7
 NativeFormatImporter:
   externalObjects: {}
@@ -7,6 +8,12 @@ NativeFormatImporter:
 =======
   mainObjectFileID: 0
 >>>>>>> origin/TempA3
+=======
+guid: 52203f1d80ebf4a439282acae998dfc0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> origin/MiloTemp1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

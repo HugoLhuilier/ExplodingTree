@@ -5,9 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - player
+<<<<<<< HEAD
   - UIObject
   - Monster
   - Echelle
+=======
+  - Music
+>>>>>>> origin/MiloTemp1
   layers:
   - Default
   - TransparentFX

@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: dde08bf0776a7f04786056d810c57647
 =======
 guid: d9ca16c212698904fac5e38e8a2a8fac
 >>>>>>> origin/TempA3
+=======
+guid: df370018ebcf09b4f95d67e2940cb7d6
+>>>>>>> origin/MiloTemp1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,7 +41,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/MiloTemp1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +59,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 32
+>>>>>>> origin/MiloTemp1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +86,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 2
+>>>>>>> origin/MiloTemp1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

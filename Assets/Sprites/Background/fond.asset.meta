@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 844e1efe758b91e46b7a49c52fcb69a8
 =======
 guid: 842aaa0611c47d740af3b3203c2a3099
@@ -7,6 +8,12 @@ guid: 842aaa0611c47d740af3b3203c2a3099
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+=======
+guid: 70e8d1b486875be409946616ca937958
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>> origin/MiloTemp1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

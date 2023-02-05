@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f8d4521ec839f16449b2e795dbd7c782
+=======
+guid: cbcf32aa49ac3f844a98edbfe2fcb2b8
+>>>>>>> origin/MiloTemp1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
