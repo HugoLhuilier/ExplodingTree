@@ -14,22 +14,20 @@ public class Monster : MonoBehaviour
     [SerializeField] private float HP;
     [SerializeField] private float damage;
     [SerializeField] private int payload;
-    [SerializeField] private int damageTime;
-    
-    private int damageCoolDown;
+
+
+    private float globalSpeed;
 
     private bool alive;
     
     private int direction;      // 1 = left ; -1 = right
 
-    private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11.3 or 11.3
-
-    private SpriteRenderer spriteRenderer;
-    private Sprite sprite;
+    //private Vector2 spawnPosition;  // Y random goes from -4 to 2 ; X is finite, -11.3 or 11.3
 
 
     public float changeDuration = 1f;
 
+    /*
     static private string[] names = {
         "Ecureuil robot",
         "Cochon robot",
@@ -107,24 +105,27 @@ public class Monster : MonoBehaviour
     */
 
 
-    public void Consturct(int ty){        // Monster pseudo-constructor
+    public void Consturct(int dir, float spd){        // Monster pseudo-constructor
+
+        globalSpeed = spd;
+        /*
         type = ty;
         name = Monster.names[ty];
         speed = Monster.speeds[ty];
         HP = Monster.HPs[ty];
         payload = Monster.payloads[ty];
         damage = Monster.damages[ty];
+        */
 
-        direction = 1;
-
-        if (Random.Range(0,2) == 0){
-            direction = -1;
+        direction = dir;
+        if(direction == -1)
+        {
+            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
         }
 
-        spawnPosition = new Vector3(-11*direction,0,0) + new Vector3(0,Random.Range(-4f,2f),0);
+        
 
-        transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        //transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
 
    }
 
@@ -132,9 +133,7 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        alive = true;
-        damageCoolDown = damageTime/2;
-        
+        alive = true;        
     }
     
 
@@ -143,21 +142,16 @@ public class Monster : MonoBehaviour
     {
         if(alive && Mathf.Abs(transform.position.x) > 1.8f){
 
-            transform.position += new Vector3(direction*speed*0.01f,0,0);
+            transform.position += new Vector3(direction*speed*0.01f*globalSpeed,0,0);
         }
         else if(alive)
         {
-            if(damageCoolDown <= 0)
-            {
-                DealDamage();
-                damageCoolDown = damageTime;
-            }
-            damageCoolDown--;
+            DealDamage();
         }
     }
 
 
-    void DealDamage()       // Deal 'damage' damage to the player.
+    void DealDamage()       // Deal 'damage' damage to the player. And sacrifices the monster
     {
 
         GameObject player = GameObject.Find("Player");
@@ -188,13 +182,15 @@ public class Monster : MonoBehaviour
         monstersAlive.Remove(gameObject);
 
 
-        GameObject player = GameObject.Find("Player");
+        //GameObject player = GameObject.Find("Player");
 
-        player.GetComponent<Ressources>().GetReward(payload);
+        //player.GetComponent<Ressources>().GetReward(payload);
 
         Destroy(gameObject);
     }
 
+
+    /*
     public IEnumerator ChangeToRed()
     {
         Color originalColor = spriteRenderer.color;
@@ -209,5 +205,5 @@ public class Monster : MonoBehaviour
         }
         spriteRenderer.color = Color.red;
     }
-
+    */
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,12 @@ using UnityEngine.UI;
 
 public class Ressources : MonoBehaviour
 {
-    
-   
 
-    [SerializeField] private GameObject healthBar;
+    public event EventHandler OnDamaged;
+
+    public GameObject healthBar;
+    public HealthBarManager healthBarManager;
+
 
     private Slider slider;
 
@@ -20,11 +23,11 @@ public class Ressources : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         resources[0] = 10;
         healthPoints = 100;
         slider = healthBar.GetComponent<Slider>();
         slider.enabled = true;
+        slider.value = 100f;
     }
 
 
@@ -38,7 +41,14 @@ public class Ressources : MonoBehaviour
     public void GetHit(float damage)
     {
         healthPoints -= damage;
-        if(healthPoints <= 0)
+
+        StartCoroutine(healthBar.GetComponent<HealthBarManager>().ShakeHealthBar(.7f, 2f*damage));
+
+        if (OnDamaged != null) OnDamaged(this, EventArgs.Empty);
+
+        healthBarManager.ResetTime();
+
+        if (healthPoints <= 0)
         {
             // Load Gameover screen
         }
@@ -55,7 +65,8 @@ public class Ressources : MonoBehaviour
     }
     public void addCoins(int value)
     {
-        resources[0] += value; 
+        resources[0] += value;
     }
+
 
 }

@@ -18,6 +18,7 @@ public class Projectile : MonoBehaviour
         
     }
 
+    /*
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.TryGetComponent(out Monster enemyComponent))
@@ -36,5 +37,5 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    
+    */
 }
