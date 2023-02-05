@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nut_Launcher
       objectReference: {fileID: 0}
+    - target: {fileID: 5031738426438663052, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 7372914900878913373, guid: e035f6c8870323448bdb7fbc589a0a93, type: 3}
     - target: {fileID: 5031738426438663054, guid: 9c32f05fdd003134c8cf0030d4263f54, type: 3}
       propertyPath: m_Sprite
       value: 

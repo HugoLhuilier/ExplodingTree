@@ -219,6 +219,8 @@ MonoBehaviour:
   UISell: {fileID: 5221080553385183263, guid: ec54de34802e537428f0b5d3282cec62, type: 3}
   radius: {fileID: 6938433555933547471, guid: 9b8eab01a06ce06418a4201766852a7e, type: 3}
   range: 0
+  textMesh: {fileID: 7372914900878913373, guid: e035f6c8870323448bdb7fbc589a0a93, type: 3}
+  number: 42
 --- !u!61 &5031738426438663053
 BoxCollider2D:
   m_ObjectHideFlags: 0

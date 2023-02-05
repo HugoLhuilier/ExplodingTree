@@ -33,6 +33,7 @@ public class GunShooter : MonoBehaviour
     public float overchargeTime = 0f;
     public bool overcharge = false;
 
+
     //Animation
     //private Animator myAnimator;
     //private SpriteRenderer mySpriteRenderer;

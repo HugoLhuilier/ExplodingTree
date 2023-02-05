@@ -13,12 +13,17 @@ public class UIGun : MonoBehaviour
     [SerializeField] private GameObject radius;
     public float range;
 
-    
+    [SerializeField] private TextMesh textMesh;
+    private int number = 42;
+
 
     // Start is called before the first frame update
     void Start()
     {
         range = weapon.GetComponent<GunShooter>().range;
+        //textMesh.text = number.ToString();
+        //textMesh.fontSize = 30;
+        //textMesh.color = Color.red;
     }
 
     // Update is called once per frame
@@ -35,6 +40,7 @@ public class UIGun : MonoBehaviour
         GameObject Overcharge = Instantiate(UIOvercharge, weapon.transform.position + new Vector3(-2, 0), Quaternion.identity);
         GameObject Sell = Instantiate(UISell, weapon.transform.position + new Vector3(0, -2), Quaternion.identity);
         GameObject Radius = Instantiate(radius, weapon.transform.position, Quaternion.identity);
+        Instantiate(textMesh, weapon.transform.position, Quaternion.identity);
 
 
         Wheel.GetComponent<UIClose>().motherWeapon = weapon;
