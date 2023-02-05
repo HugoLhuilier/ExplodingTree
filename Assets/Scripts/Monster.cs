@@ -8,7 +8,7 @@ public class Monster : MonoBehaviour
 {
 
 
-    [SerializeField] Sprite[] Sprites;
+    //[SerializeField] Sprite[] Sprites;
 
     /*
     [SerializeField] Sprite ecureuilRobotSprite;
@@ -91,6 +91,7 @@ public class Monster : MonoBehaviour
         5,
         10,
         10,
+        12,
         8,
         15,
         18,
@@ -127,7 +128,7 @@ public class Monster : MonoBehaviour
         HP = Monster.HPs[ty];
         payload = Monster.payloads[ty];
         damage = Monster.damages[ty];
-        sprite = Sprites[ty];
+        //sprite = Sprites[ty];
 
         direction = 1;
 
@@ -137,17 +138,18 @@ public class Monster : MonoBehaviour
 
         spawnPosition = new Vector3(-11*direction,0,0) + new Vector3(0,Random.Range(-4f,2f),0);
 
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        //SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
    }
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        alive = true;
         transform.position = new Vector3(spawnPosition.x,spawnPosition.y,0);
+        alive = true;
         damageCoolDown = damageTime/2;
+        //spriteRenderer.sprite = sprite;
         
     }
     

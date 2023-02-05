@@ -26,10 +26,10 @@ public class UIShopGun : MonoBehaviour
     private void OnMouseDown()
     {
         GameObject Wheel = Instantiate(wheel, shop.transform.position, Quaternion.identity);
-        GameObject Mushroom = Instantiate(UIMushroom, shop.transform.position + new Vector3(0, 2), Quaternion.identity);
-        GameObject Catapult = Instantiate(UICatapult, shop.transform.position + new Vector3(2, 0), Quaternion.identity);
-        GameObject Flower = Instantiate(UIFlower, shop.transform.position + new Vector3(-2, 0), Quaternion.identity);
-        GameObject NutLauncher = Instantiate(UINutLauncher, shop.transform.position + new Vector3(0, -2), Quaternion.identity);
+        GameObject Mushroom = Instantiate(UIMushroom, shop.transform.position + new Vector3(0, 1.6f), Quaternion.identity);
+        GameObject Catapult = Instantiate(UICatapult, shop.transform.position + new Vector3(1.6f, 0), Quaternion.identity);
+        GameObject Flower = Instantiate(UIFlower, shop.transform.position + new Vector3(-1.6f, 0), Quaternion.identity);
+        GameObject NutLauncher = Instantiate(UINutLauncher, shop.transform.position + new Vector3(0, -1.6f), Quaternion.identity);
         GameObject Rafflesia = Instantiate(UIRafflesia, shop.transform.position, Quaternion.identity);
 
 

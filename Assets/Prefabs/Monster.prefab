@@ -99,7 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275469c51a7a8084fa60c6afb503afd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 8355488903012431100}
+  Sprites:
+  - {fileID: 21300000, guid: 406d66792b4223949a6b12961c061022, type: 3}
+  - {fileID: 21300000, guid: dce331fbc0305614ba03507cd7e67906, type: 3}
+  - {fileID: 21300000, guid: 93c8aba608925c04ca4eecc9c4c42b6a, type: 3}
+  - {fileID: 21300000, guid: 76e50a32523327c48b0fc0c6be383f02, type: 3}
+  - {fileID: 21300000, guid: 365913954800dd44783866323b51c4b1, type: 3}
+  - {fileID: 21300000, guid: 2b47b44386f1b364fb90880595f40991, type: 3}
+  - {fileID: 21300000, guid: 6bf251e118e93e443b8421da00ea8764, type: 3}
+  - {fileID: 21300000, guid: 57cb2a0fde1da974c942ca2fe0eb9187, type: 3}
   changeDuration: 1
 --- !u!50 &1987578003327079317
 Rigidbody2D:
