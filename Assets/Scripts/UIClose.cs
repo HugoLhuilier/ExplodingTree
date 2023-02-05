@@ -20,10 +20,7 @@ public class UIClose : MonoBehaviour
         {
             Vector3 mousePosition = Input.mousePosition;
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            
             if (Vector2.Distance(worldPosition, motherWeapon.transform.position) > 2) {
-
-
                 Destroy(mainUI);
             }
         }

@@ -18,9 +18,10 @@ public class Projectile : MonoBehaviour
         
     }
 
+    /*
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.TryGetComponent<Monster>(out Monster enemyComponent))
+        if (other.gameObject.TryGetComponent(out Monster enemyComponent))
         {
             enemyComponent.GetDamage(damage);
             StartCoroutine(enemyComponent.ChangeToRed());
@@ -36,5 +37,5 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    
+    */
 }

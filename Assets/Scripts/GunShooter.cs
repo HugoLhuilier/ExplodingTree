@@ -5,6 +5,7 @@ using UnityEngine;
 public class GunShooter : MonoBehaviour
 {
     [SerializeField] private bool doRotation;
+    [SerializeField] private bool triple;
 
     //Tir de projectile
     [SerializeField] private GameObject gun;
@@ -138,11 +139,25 @@ public class GunShooter : MonoBehaviour
         //myAnimator.SetTrigger("Fire");
         Destroy(bullet, 7);
         //rotation
-        if(doRotation)
+        if(triple)
+        {
+            GameObject bullet2 = Instantiate(projectile2, firePoint.position, Quaternion.Euler(new Vector3(0, 0, aimAngle + 10)));
+            GameObject bullet3 = Instantiate(projectile2, firePoint.position, Quaternion.Euler(new Vector3(0, 0, aimAngle + 10)));
+            bullet2.GetComponent<Rigidbody2D>().AddForce(new Vector2(closestMonster.transform.position.x - transform.position.x, closestMonster.transform.position.y - transform.position.y + 1).normalized * fireForce, ForceMode2D.Impulse);
+            bullet3.GetComponent<Rigidbody2D>().AddForce(new Vector2(closestMonster.transform.position.x - transform.position.x, closestMonster.transform.position.y - transform.position.y + 1).normalized * fireForce, ForceMode2D.Impulse);
+            bullet2.GetComponent<Projectile>().damage = damage;
+            bullet3.GetComponent<Projectile>().damage = damage;
+            Destroy(bullet2, 7);
+            Destroy(bullet3, 7);
+            gun.transform.rotation *= Quaternion.Euler(new Vector3(0, 0, 90));
+        }
+        if (doRotation)
         {
             gun.transform.rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle));
 
         }
+        
+
         yield return new WaitForSeconds(time);
         StartCoroutine(Shoot(shootSpeed));
 
