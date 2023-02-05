@@ -120,7 +120,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6424690c6f9c5c84099d7d4427ff68c0
-      internalID: -850830950
+      internalID: 9189651147465292654
       vertices: []
       indices: 
       edges: []
@@ -129,219 +129,27 @@ TextureImporter:
       name: Background_ext_layers-Sheet_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 480
-        y: 7
-        width: 176
-        height: 207
-=======
-        x: 384
-        y: 432
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cef90c90c85802148b5709624dc5187f
-      internalID: 1351563196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_2
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-        x: 1566
-        y: 148
-        width: 296
-        height: 68
-=======
-        x: 768
-        y: 432
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 102bd142625157342abad8e97e659b13
-      internalID: -809240498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_3
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-        x: 2032
-        y: 142
-        width: 60
-        height: 69
-=======
-        x: 0
-        y: 216
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2a89aa2d53dcc64b991cb93cb54c87b
-      internalID: -3960844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_4
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-        x: 2064
-        y: 48
-        width: 46
-        height: 113
-=======
-        x: 384
-        y: 216
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3accdcad5bda894caee381ca8083c8c
-      internalID: -617740046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_5
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-        x: 2127
-        y: 55
-        width: 28
-        height: 118
-=======
-        x: 768
-        y: 216
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 979604d58145d9e48b46370e4a304d20
-      internalID: -1702702839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_6
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-        x: 2169
-        y: 139
-        width: 31
-        height: 53
-=======
         x: 0
         y: 0
-        width: 384
-        height: 216
->>>>>>> origin/MiloTemp1
+        width: 0
+        height: 0
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cfd185b84f18b81459168ef47edf54fe
-      internalID: -339063410
+      spriteID: 5436822b893127860800000000000000
+      internalID: 7526099473834468165
       vertices: []
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 0
-        width: 29
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26b9e42747b9b304698bd866d54b43f5
-      internalID: 1946191229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_ext_layers-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 1138
-        y: 0
-        width: 399
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e16cefd228282445bdfa78d96090135
-      internalID: -698321073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-=======
->>>>>>> origin/MiloTemp1
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Background_ext_layers-Sheet_1: 1351563196
-      Background_ext_layers-Sheet_3: -3960844
-      Background_ext_layers-Sheet_4: -617740046
-      Background_ext_layers-Sheet_5: -1702702839
-      Background_ext_layers-Sheet_6: -339063410
-      Background_ext_layers-Sheet_0: -850830950
-      Background_ext_layers-Sheet_7: 1946191229
-      Background_ext_layers-Sheet_2: -809240498
+      Background_ext_layers-Sheet_1: 7526099473834468165
+      Background_ext_layers-Sheet_0: 9189651147465292654
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
